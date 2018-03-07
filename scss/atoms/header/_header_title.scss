@@ -1,0 +1,26 @@
+
+.header_title{
+  position: relative;
+  margin: -2vw 1vw 0 2vw;
+  padding: 0;
+  display:inline-block;
+  font-family: $default-ff;
+  color:black;
+  width: 100vw;
+  font-size: 6vw;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: .2vw;
+
+  .first{
+    display: inline-block;
+    height: 0;
+    font-family:$cursive-ff;
+    color:$color-primary;
+    text-transform: none;
+    font-weight: $regular;
+    font-size:9vw;
+    letter-spacing: 0;    
+    word-spacing: -1.5vw;
+  }
+}

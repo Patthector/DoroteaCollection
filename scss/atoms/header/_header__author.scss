@@ -1,0 +1,14 @@
+
+.header__author{
+  color:black;
+  font-size: 7px;
+  font-family: $default-ff;
+  .first{
+    font-style: italic;
+  }
+  .last{
+    text-transform: uppercase;
+    font-weight: $bold;
+  }
+
+}

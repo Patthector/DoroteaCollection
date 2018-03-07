@@ -1,0 +1,12 @@
+
+.header_content{
+  font-family: $default-ff;
+  font-size: 14px;
+  letter-spacing: .3px;
+  line-height: 18px;
+  &::first-letter{
+    font-family: $cursive-ff;
+    font-size: 60px;
+    letter-spacing: -5px;
+  }
+}

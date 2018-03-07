@@ -1,0 +1,26 @@
+
+.handmadeAndHandpaint_title{
+  margin:0;
+  padding: 0;
+  line-height: 28px;
+  .first{
+    font-weight: $black;
+    font-family: $default-ff;
+    text-transform: uppercase;
+    font-size: 42px;
+    color:black;
+    letter-spacing: -1.5px;
+  }
+  .middle{
+    font-family: $default-ff;
+    font-style: italic;
+    font-size: 36px;
+    text-transform: uppercase;
+    color:black;
+  }
+  .last{
+    font-family: $cursive-ff;
+    font-size: 48px;
+    color:pink;
+  }
+}
