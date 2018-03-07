@@ -18,6 +18,9 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 a {
@@ -29,7 +32,8 @@ a {
 
 img {
   height: auto;
-  max-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 h1,
@@ -41,7 +45,13 @@ h6 {
   font-family: $font-family-display;
   font-weight: normal;
 }
-img{
-  display: block;
-  width: 100%;  
+section,div{
+  margin: 0;
+  padding: 0;
+}
+.row,.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }

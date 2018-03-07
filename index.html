@@ -58,10 +58,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
     </head>
-  <body class = "container-fluid">
-    <main role = "main">
+  <body class = "">
+    <main role = "main" class = "container-fluid">
       <header>
         <!--image-background-->
         <div class = "row">
@@ -75,8 +74,7 @@
               collection available for the view, mugs, plates, bolws, etc " title = "Full Display of Dorotea Collection Dinnerware Set" />
             <div class = "header__title-container">
               <h1 class = "header_title">
-                <span class = "first">The</span>
-                Dorotea's Collection
+                <span class = "first">The</span>Dorotea Collection
               </h1>
             </div>
             <div class = "header__author-container">
@@ -85,10 +83,9 @@
           </div>
         </div>
         <!--END_image-background-->
-
         <!--header-verse-->
         <div class = "verse-container row">
-          <div class = "col-8 offset-4">
+          <div class = "col-9 offset-3">
             <hr class = "subline-verse"/>
             <p class = "header_verse">Puedo sentir cada alegria y buen recuerdo, cada fracaso
               y recomienzo, cada vez mas fuerte y sincero. Esta aqui,
@@ -100,7 +97,7 @@
           </div>
         </div>
         <div class = "row">
-          <p class = "col-10 offset-1 header_content">Dorotea Collection es la obra de ceramica de la artista
+          <p class = "col-12 header_content">Dorotea Collection es la obra de ceramica de la artista
         española Carolina Silva. Creada y llevada al mercado hace mas de
         10 años, con una acojida del publico estupenda. La artista expresa
         en la obra su profunda conexion con la naturaleza, plazmandolo
@@ -150,14 +147,33 @@
           un caracter propio a la obra.</p>
       </section>
       <!--TOUCHOFNATURE-->
-      <section class = "nature">
-        <div class = "nature__image-container">
-          <img src = "" alt = "" title = "" />
+      <section class = "nature row">
+        <div class = "nature__image-container col-12">
+          <img class = "img"
+               size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+               srcset = "./images/nature-480.jpg 480w, ./images/nature-900.jpg 900w, ./images/nature-1250.jpg 1250w"
+               src = "./images/nature-1250.jpg"
+            alt = "The representation of Nature is all over on this piece of art. Leaves, flower and beautiful colors
+            will make you fall in love with Dorotea Collection" title = "Touch of Nature" />
           <div class = "nature__shadow-container"></div>
           <div class = "nature__article">
-            <h2>Touch of Nature</h2>
-            <div class = "nature__verse-container"></div>
-            <p>the content</p>
+            <h2 class = "nature__title">Touch<span class = "middle">of</span><span class = "last">Nature</span></h2>
+            <div class = "nature__verse-container col-10 offset-1">
+              <hr class = "subline-verse"/>
+              <p class = "nature__verse col-10 offset-1">Verde, puro, sereno, tranquilo, silencio.
+              Crece la flor del jardin aunque el mundo
+              este en tinieblas. Simplicidad en el concepto
+              mas completo de la vida. Pureza desbordante.
+              Expresion de vida, de fuerza, de busqueda,
+              de sentido. Natural es todo lo bello, lo puro,
+              lo nuevo y lo viejo danzando juntos entre
+              lo real y lo fantastico.</p>
+              <hr class = "subline-verse"/>
+            </div>
+            <p class = "nature__content col-12">La naturaleza es el centro de inspiracion de la artista, fuente de
+            profunda admiracion y complice de toda la belleza y serenidad que
+            Carolina es capaz de captar en su ceramica haciendola protagonista
+            de cada trazo en Dorotea Collection.</p>
           </div>
         </div>
       </section>
@@ -168,51 +184,90 @@
         <div class = "texture__image-container"></div>
       </section>
       <!--DOROTEACOLLECTIONPEICES-->
-      <section class = "gallery">
-        <h2>Dorotea Collection Pieces</h2>
-        <ul>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button href = "" >More Info</button>
-          </li>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button href = "" >More Info</button>
-          </li>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button href = "" >More Info</button>
-          </li>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button href = "" >More Info</button>
-          </li>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button href = "" >More Info</button>
-          </li>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button href = "" >More Info</button>
-          </li>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button href = "" >More Info</button>
-          </li>
-          <li>
-            <h3>Product Name</h3>
-            <img src = "" alt = "" title = "" />
-            <button type="button" class="btn btn-primary" href = "" >More Info</button>
-          </li>
-        </ul>
-      </section>
+      <div class = "row">
+        <section class = "gallery col-12">
+          <h2 class = "pieces__title">Dorotea Collection <br/><span class = "first">Pieces</span></h2>
+          <ul class = "col-12 gallery__list-pieces">
+            <li class = "piece">
+              <h3 class = "piece__title">Coffee/Tea <span class = "first">mug</span></h3>
+              <img class = "img"
+                   size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+                   srcset = "./images/gallery/mug-480.jpg 480w, ./images/gallery/mug-900.jpg 900w, ./images/gallery/mug-1250.jpg 1250w"
+                   src = "./images/gallery/mug-1250.jpg"
+                alt = "A Coffee/Tea Mug from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
+                title = "Coffee/Tea Mug" />
+              <button class = "piece__button" href = "" >More Info</button>
+            </li>
+            <li class = "piece">
+              <h3 class = "piece__title">Small Fruit <span class = "first">bowl</span></h3>
+              <img class = "img"
+                   size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+                   srcset = "./images/gallery/small-bowl-480.jpg 480w, ./images/gallery/small-bowl-900.jpg 900w, ./images/gallery/small-bowl-1250.jpg 1250w"
+                   src = "./images/gallery/small-bowl-1250.jpg"
+                alt = "A Small Fruit Bowl from Dorotea Collection. Made by Carolina Silve. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
+                title = "Small Fruit Bowl" />
+              <button class = "piece__button" href = "" >More Info</button>
+            </li>
+            <hr class = "gallery__line"/>
+            <li class = "piece">
+              <h3 class = "piece__title">Soup/Cereal <span class = "first">bowl</span></h3>
+              <img class = "img"
+                   size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+                   srcset = "./images/gallery/bowl-480.jpg 480w, ./images/gallery/bowl-900.jpg 900w, ./images/gallery/bowl-1250.jpg 1250w"
+                   src = "./images/gallery/bowl-1250.jpg"
+                alt = "A Soup/Cereal Bowl from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
+                title = "Soup/Cereal Bowl" />
+              <button class = "piece__button" href = "" >More Info</button>
+            </li>
+            <li class = "piece">
+              <h3 class = "piece__title">Dinner <span class = "first">plate</span></h3>
+              <img class = "img"
+                   size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+                   srcset = "./images/gallery/plate-480.jpg 480w, ./images/gallery/plate-900.jpg 900w, ./images/gallery/plate-1250.jpg 1250w"
+                   src = "./images/gallery/plate-1250.jpg"
+                alt = "A Dinner Plate from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
+                title = "Dinner Plate" />
+              <button class = "piece__button" href = "" >More Info</button>
+            </li>
+            <hr class = "gallery__line"/>
+            <li class = "piece">
+              <h3  class = "piece__title">Oval Serving <span class = "first">platter</span></h3>
+              <img class = "img"
+                   size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+                   srcset = "./images/gallery/oval-serving-platter-480.jpg 480w, ./images/gallery/oval-serving-platter-900.jpg 900w, ./images/gallery/oval-serving-platter-1250.jpg 1250w"
+                   src = "./images/gallery/oval-serving-platter-1250.jpg"
+                alt = "An Oval Serving Platter from Dorotea Collection. Made by Carolina Silve. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
+                title = "Oval Serving Platter" />
+              <button class = "piece__button" type="button" class="btn btn-primary" href = "" >More Info</button>
+            </li>
+            <li class = "piece">
+              <h3 class = "piece__title">Vegetable Serving <span class = "first">bowl</span></h3>
+              <img class = "img"
+                   size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+                   srcset = "./images/gallery/serving-bowl-480.jpg 480w, ./images/gallery/serving-bowl-900.jpg 900w, ./images/gallery/serving-bowl-1250.jpg 1250w"
+                   src = "./images/gallery/serving-bowl-1250.jpg"
+                alt = "A Vegetable Serving Bowl from Dorotea Collection. Made by Carolina Silve. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
+                title = "Vegetable Serving Bowl" />
+              <button class = "piece__button" href = "" >More Info</button>
+            </li>
+            <hr class = "gallery__line"/>
+            <li class = "piece">
+              <h3>Special Offer <span class = "first"></span></h3>
+              <button href = "" >More Info</button>
+            </li>
+            <li class = "piece">
+              <h3 class = "piece__title">Salad/Dessert <span class = "first">plate</span></h3>
+              <img class = "img"
+                   size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
+                   srcset = "./images/gallery/salad-480.jpg 480w, ./images/gallery/salad-900.jpg 900w, ./images/gallery/salad-1250.jpg 1250w"
+                   src = "./images/gallery/salad-1250.jpg"
+                alt = "A Dinner Plate from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
+                title = "Salad/Dessert Plate" />
+              <button class = "piece__button" href = "" >More Info</button>
+            </li>
+          </ul>
+        </section>
+      </div>
       <section class = "amazon-affiliate-program">
         <h4>AMAZON</h4>
         <span>exclusive product</span>

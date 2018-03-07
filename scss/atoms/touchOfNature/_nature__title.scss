@@ -1,0 +1,18 @@
+
+.nature__title{
+  font-family: $default-ff;
+  color:white;
+  font-size: 14vw;
+  text-align: center;
+  margin-bottom: 0;
+  .middle{
+    color:$color-primary;
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: $black;
+  }
+  .last{
+    font-size: 12vw;
+    font-family: $cursive-ff;
+  }
+}

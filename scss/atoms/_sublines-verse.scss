@@ -1,7 +1,9 @@
 
 .subline-verse{
-  width: 48px;
+  width: 10vw;//change to vw
   background: $color-primary;
-  height: 2.5px;
+  height: 0.2vh;
   border:0;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }

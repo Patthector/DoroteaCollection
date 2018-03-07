@@ -1,0 +1,10 @@
+
+.gallery__list-pieces{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 1 50%;
+  padding: 0;
+}

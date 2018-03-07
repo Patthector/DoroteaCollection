@@ -1,0 +1,16 @@
+
+.piece{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:2vw 1vw;
+  position: relative;
+  width: 50%;
+  min-height: 133px;//get this[dinner-plate-heigh] value with JS
+  img{
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+}

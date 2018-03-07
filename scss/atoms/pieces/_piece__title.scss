@@ -1,0 +1,18 @@
+
+.piece__title{
+  color:black;
+  font-family: $default-ff;
+  font-size:4vw;
+  text-transform: uppercase;
+  font-weight: $bold;
+  text-align: center;
+  line-height: 5vw;
+  margin-bottom:3vw;
+  .first{
+    color:$color-primary;
+    text-transform: none;
+    font-family: $cursive-ff;
+    font-weight: $regular;
+    font-size:7vw;
+  }
+}
