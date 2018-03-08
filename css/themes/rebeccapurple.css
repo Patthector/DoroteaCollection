@@ -52,19 +52,20 @@ section, div {
 .header_verse {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 14px;
-  color: black;
-  line-height: 18px;
-  letter-spacing: .6px; }
+  font-size: 2.8vw;
+  letter-spacing: .15vw;
+  line-height: 4vw;
+  color: #212529; }
 
 .header_content {
+  font-size: 3vw;
   font-family: "Playfair Display", serif;
-  font-size: 14px;
-  letter-spacing: .3px;
-  line-height: 18px; }
+  letter-spacing: .1vw;
+  line-height: 5vw;
+  color: black; }
   .header_content::first-letter {
     font-family: "Parisienne", cursive;
-    font-size: 60px;
+    font-size: 14vw;
     letter-spacing: -5px; }
 
 .header_title {
@@ -92,11 +93,11 @@ section, div {
     .header_title .first::first-letter {
       display: inline-block;
       margin-right: -2vw;
-      font-size: 11vw; }
+      font-size: 11.5vw; }
 
 .header__author {
   color: black;
-  font-size: 7px;
+  font-size: 2vw;
   font-family: "Playfair Display", serif; }
   .header__author .first {
     font-style: italic; }
@@ -107,32 +108,43 @@ section, div {
 .handmadeAndHandpaint_title {
   margin: 0;
   padding: 0;
-  line-height: 28px; }
+  line-height: 9vw;
+  text-align: center; }
   .handmadeAndHandpaint_title .first {
     font-weight: 900;
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 12vw;
     color: black;
-    letter-spacing: -1.5px; }
+    letter-spacing: -.3vw; }
   .handmadeAndHandpaint_title .middle {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    font-size: 36px;
+    font-size: 10vw;
     text-transform: uppercase;
     color: black; }
   .handmadeAndHandpaint_title .last {
     font-family: "Parisienne", cursive;
-    font-size: 48px;
-    color: pink; }
+    font-size: 18vw;
+    color: #ffb3a1; }
 
 .handmadeAndHandpaint_verse {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: .3px;
+  font-size: 2.8vw;
+  letter-spacing: .1vw;
+  line-height: 4vw;
   margin: 12px; }
+
+.handmadeAndHandpaint_content {
+  font-family: "Playfair Display", serif;
+  font-size: 3vw;
+  line-height: 5vw;
+  color: black;
+  margin-top: 6vw; }
+  .handmadeAndHandpaint_content::first-letter {
+    font-size: 16vw;
+    font-family: "Parisienne", cursive; }
 
 .nature__title {
   font-family: "Playfair Display", serif;
@@ -151,20 +163,24 @@ section, div {
 
 .nature__verse {
   color: white;
-  font-size: 2.2vw;
+  font-size: 2.8vw;
+  letter-spacing: .1vw;
+  line-height: 4vw;
   font-family: "Playfair Display", serif;
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
 
 .nature__content {
-  color: white;
-  font-size: 2.2vw;
+  color: black;
+  font-size: 3vw;
   font-family: "Playfair Display", serif;
-  letter-spacing: .05vw;
-  line-height: 3.5vw; }
+  letter-spacing: .1vw;
+  line-height: 5vw; }
   .nature__content::first-letter {
-    font-size: 8vw;
-    font-family: "Parisienne", cursive; }
+    font-size: 14vw;
+    font-family: "Parisienne", cursive;
+    color: #ffb3a1; }
 
 .piece {
   display: flex;
@@ -180,10 +196,26 @@ section, div {
     display: block;
     margin: auto; }
 
+.pieces__title {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  line-height: 7vw;
+  margin-bottom: 10vw; }
+  .pieces__title .first {
+    color: #ffb3a1;
+    text-transform: none;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-size: 12vw; }
+
 .piece__title {
   color: black;
   font-family: "Playfair Display", serif;
-  font-size: 4vw;
+  font-size: 5vw;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -196,6 +228,7 @@ section, div {
     font-weight: 400;
     font-size: 7vw; }
 
+/*it is NOT double content ('s')*/
 .piece__button {
   display: none; }
 
@@ -272,8 +305,10 @@ section, div {
 .collage-sm {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: 36px;
-  grid-auto-flow: dense; }
+  grid-auto-rows: minmax(10px, auto);
+  grid-auto-flow: dense;
+  padding-left: 0;
+  padding-right: 0; }
   .collage-sm div {
     padding: 2.5%; }
     .collage-sm div img {
@@ -282,8 +317,7 @@ section, div {
       height: 100%; }
 
 .block-blank {
-  grid-column-end: span 1;
-  grid-row-end: span 3; }
+  grid-column-end: span 1; }
 
 .grid-sm-7 {
   grid-column-end: span 7; }
@@ -300,21 +334,22 @@ section, div {
 .grid-sm-12 {
   grid-column-end: span 12; }
 
-.grid-r-sm-2 {
-  grid-row-end: span 2; }
-
-.grid-r-sm-3 {
-  grid-row-end: span 3; }
-
-.grid-r-sm-4 {
-  grid-row-end: span 4; }
-
-.grid-r-sm-5 {
-  grid-row-end: span 5; }
-
-.grid-r-sm-8 {
-  grid-row-end: span 8; }
-
+/*
+.grid-r-sm-2{
+  grid-row-end:span 2;
+}
+.grid-r-sm-3{
+  grid-row-end:span 3;
+}
+.grid-r-sm-4{
+  grid-row-end:span 4;
+}
+.grid-r-sm-5{
+  grid-row-end:span 5;
+}
+.grid-r-sm-8{
+  grid-row-end:span 8;
+}*/
 .grid-order-sm-1 {
   order: 1; }
 

@@ -1,12 +1,13 @@
 
 .nature__content{
-  color:white;
-  font-size: 2.2vw;
+  color:black;
+  font-size: 3vw;
   font-family: $default-ff;
-  letter-spacing: .05vw;
-  line-height: 3.5vw;
+  letter-spacing: .1vw;
+  line-height: 5vw;
   &::first-letter{
-    font-size:8vw;
+    font-size:14vw;
     font-family: $cursive-ff;
+    color:$color-primary;
   }
 }
