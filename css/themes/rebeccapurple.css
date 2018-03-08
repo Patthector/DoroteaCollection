@@ -49,25 +49,6 @@ section, div {
   padding-left: 0;
   padding-right: 0; }
 
-.header_verse {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 2.8vw;
-  letter-spacing: .15vw;
-  line-height: 4vw;
-  color: #212529; }
-
-.header_content {
-  font-size: 3vw;
-  font-family: "Playfair Display", serif;
-  letter-spacing: .1vw;
-  line-height: 5vw;
-  color: black; }
-  .header_content::first-letter {
-    font-family: "Parisienne", cursive;
-    font-size: 14vw;
-    letter-spacing: -5px; }
-
 .header_title {
   position: relative;
   margin: -3.2vw 0 0 0;
@@ -128,24 +109,6 @@ section, div {
     font-size: 18vw;
     color: #ffb3a1; }
 
-.handmadeAndHandpaint_verse {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 2.8vw;
-  letter-spacing: .1vw;
-  line-height: 4vw;
-  margin: 12px; }
-
-.handmadeAndHandpaint_content {
-  font-family: "Playfair Display", serif;
-  font-size: 3vw;
-  line-height: 5vw;
-  color: black;
-  margin-top: 6vw; }
-  .handmadeAndHandpaint_content::first-letter {
-    font-size: 16vw;
-    font-family: "Parisienne", cursive; }
-
 .nature__title {
   font-family: "Playfair Display", serif;
   color: white;
@@ -161,26 +124,34 @@ section, div {
     font-size: 12vw;
     font-family: "Parisienne", cursive; }
 
-.nature__verse {
-  color: white;
-  font-size: 2.8vw;
-  letter-spacing: .1vw;
-  line-height: 4vw;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  text-align: center;
-  padding: 0; }
+.dorotea__verse--color {
+  color: white !important; }
 
-.nature__content {
-  color: black;
-  font-size: 3vw;
+.dorotea__mobile-content--color::first-letter {
+  color: #ffb3a1 !important; }
+
+.texture__title {
+  display: block;
+  width: 100%;
   font-family: "Playfair Display", serif;
-  letter-spacing: .1vw;
-  line-height: 5vw; }
-  .nature__content::first-letter {
+  font-size: 6vw;
+  color: black;
+  text-align: center;
+  line-height: 8vw;
+  word-spacing: -2vw; }
+  .texture__title .first {
+    font-weight: 900;
     font-size: 14vw;
+    letter-spacing: -.5vw; }
+  .texture__title .middle {
+    text-transform: uppercase;
+    font-size: 11vw;
+    letter-spacing: -.7vw; }
+  .texture__title .last {
     font-family: "Parisienne", cursive;
-    color: #ffb3a1; }
+    color: #ffb3a1;
+    font-size: 16vw;
+    text-transform: capitalize; }
 
 .piece {
   display: flex;
@@ -190,10 +161,9 @@ section, div {
   padding: 2vw 1vw;
   position: relative;
   width: 50%;
-  min-height: 133px;
   margin-top: 6vw; }
   .piece img {
-    width: auto;
+    width: 100%;
     display: block;
     margin: auto; }
 
@@ -214,6 +184,7 @@ section, div {
     font-size: 12vw; }
 
 .piece__title {
+  width: 100%;
   color: black;
   font-family: "Playfair Display", serif;
   font-size: 5vw;
@@ -277,6 +248,25 @@ section, div {
   border: 0;
   margin-top: 2vh;
   margin-bottom: 2vh; }
+
+.dorotea__mobile-verse {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: black;
+  font-size: 2.8vw;
+  letter-spacing: 0.15vw;
+  line-height: 4vw; }
+
+.dorotea__mobile-content {
+  font-family: "Playfair Display", serif;
+  color: #343a40;
+  font-size: 3.3vw;
+  letter-spacing: 0.1vw;
+  line-height: 5vw; }
+  .dorotea__mobile-content::first-letter {
+    font-family: "Parisienne", cursive;
+    font-size: 14vw;
+    letter-spacing: -0.5vw; }
 
 .header__img-back-container {
   position: relative;

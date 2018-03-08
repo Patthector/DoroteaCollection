@@ -1,0 +1,27 @@
+
+.texture__title{
+  display: block;
+  width: 100%;
+  font-family: $default-ff;
+  font-size:6vw;
+  color:black;
+  text-align: center;
+  line-height: 8vw;
+  word-spacing: -2vw;
+  .first{
+    font-weight: $black;
+    font-size:14vw;
+    letter-spacing: -.5vw;
+  }
+  .middle{
+    text-transform: uppercase;
+    font-size: 11vw;
+    letter-spacing: -.7vw;
+  }
+  .last{
+    font-family: $cursive-ff;
+    color:$color-primary;
+    font-size:16vw;
+    text-transform: capitalize;
+  }
+}

@@ -141,3 +141,39 @@
 // @usage - `@include invisible`
 
 @mixin invisible { visibility: hidden; }
+
+//******************************************
+//By PATTOR
+
+//verse--atom styles
+@mixin dorotea__verse($verse__font-size:null, $verse__letter-spacing:null, $verse__line-height:null){
+  font-family: $default-ff;
+  font-style: italic;
+
+  color:black;
+  font-size: $verse__font-size;
+  letter-spacing: $verse__letter-spacing;
+  line-height: $verse__line-height;
+  @content;
+}
+
+
+//content--atom styles
+@mixin dorotea__content($content__font-size:null,
+               $content__letter-spacing:null,
+               $content__line-height:null,
+               $content__first-letter--font-family:null,
+               $content__first-letter--font-size:null,
+               $content__first-letter--letter-spacing:null){
+  font-family: $default-ff;
+  color:#343a40;
+  font-size: $content__font-size;
+  letter-spacing: $content__letter-spacing;
+  line-height: $content__line-height;
+  &::first-letter{
+    font-family: $content__first-letter--font-family;
+    font-size: $content__first-letter--font-size;
+    letter-spacing: $content__first-letter--letter-spacing;
+  }
+  @content;
+}

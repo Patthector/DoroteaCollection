@@ -1,5 +1,6 @@
 $(document).ready(function() {
   console.log("hellos");
+  Min_height_piece();
   //
   //THE GRID
   //
@@ -16,10 +17,15 @@ $(document).ready(function() {
       children.eq(i).css(`grid-row-end`,`span ${repetitions}`);
     }
   }
-  //
-  //END OF THE GRID
-  //
-  //CreatingTheGrid();
+  //Finding the min-heigh of pieces
+  function Min_height_piece(){
+    let piece__plate = $("#plate");
+    let height = piece__plate.height();
+    let piece = $(".piece");
+    piece.css('min-height',height);
+    console.log(height);
+    console.log("plate");
+  }
   /*
   $(window).on('load',function(){
     console.log("LOADING");

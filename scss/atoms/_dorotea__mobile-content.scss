@@ -1,0 +1,10 @@
+
+.dorotea__mobile-content{
+  @include dorotea__content(
+          3.3vw,
+          .1vw,
+          5vw,
+          $cursive-ff,
+          14vw,
+          -.5vw);
+}
