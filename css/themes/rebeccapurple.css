@@ -241,6 +241,40 @@ section, div {
   .piece__offer .offer .offer--pink {
     color: #ffb3a1; }
 
+.amazon__title {
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 16.5vw;
+  font-weight: 700;
+  letter-spacing: -1.5vw;
+  text-align: center; }
+
+.amazon__exclusive {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  font-size: 2.8vw;
+  letter-spacing: 1vw;
+  font-style: italic;
+  font-weight: 400;
+  background: white;
+  color: black; }
+
+.amazon__content {
+  font-family: "Playfair Display", serif;
+  font-size: 1vw;
+  color: #fff;
+  line-height: 1.8vw;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  padding-bottom: 2vw; }
+
 .subline-verse {
   width: 10vw;
   background: #ffb3a1;
@@ -422,5 +456,24 @@ section, div {
   width: 100%;
   margin: 0;
   padding: 0; }
+
+.amazon-affiliate-program {
+  padding-left: 0;
+  padding-right: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+0,de6868+40,ffb3a1+85 */
+  background: #ffb3a1;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  /*
+  background-color: #ffb3a1; // Old browsers
+  @include filter-gradient(#ffb3a1, #ffb3a1, horizontal); // IE6-9 fallback on horizontal gradient
+  @include background-image(linear-gradient(left bottom, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%));*/ }
 
 /*# sourceMappingURL=rebeccapurple.css.map */
