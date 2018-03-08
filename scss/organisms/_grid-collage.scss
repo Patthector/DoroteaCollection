@@ -38,7 +38,7 @@
 .grid-sm-12{
   grid-column-end: span 12;
 }
-/*
+
 .grid-r-sm-2{
   grid-row-end:span 2;
 }
@@ -51,9 +51,9 @@
 .grid-r-sm-5{
   grid-row-end:span 5;
 }
-.grid-r-sm-8{
-  grid-row-end:span 8;
-}*/
+.grid-r-sm-7{
+  grid-row-end:span 7;
+}
 .grid-order-sm-1{
   order:1;
 }
@@ -98,4 +98,7 @@
 }
 .grid-order-sm-15{
   order:15;
+}
+.grid-order-sm-16{
+  order:16;
 }
