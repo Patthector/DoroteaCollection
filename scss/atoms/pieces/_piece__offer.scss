@@ -1,0 +1,19 @@
+
+.piece__offer{
+  
+  .piece__offer__list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 6vw;
+  }
+  .offer{
+    font-size:4.5vw;
+    font-family: $default-ff;
+    color:black;
+    text-transform: uppercase;
+
+    .offer--pink{
+      color:$color-primary;
+    }
+  }
+}

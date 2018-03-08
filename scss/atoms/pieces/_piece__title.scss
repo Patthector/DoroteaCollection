@@ -16,3 +16,22 @@
     font-size:7vw;
   }
 }
+.piece__offer .piece__title{
+  width: 100%;
+  font-size: 5vw;
+  text-align: center;
+  .number{
+    display: inline-block;
+    font-family: $cursive-ff;
+    color:$color-primary;
+    font-size:16vw;
+    font-weight: $regular;
+  }
+  .middle{
+    font-family:$cursive-ff;
+    text-transform: none;
+    font-size:7.5vw;
+    font-weight: $regular;
+  }
+
+}

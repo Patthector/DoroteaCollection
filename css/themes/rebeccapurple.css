@@ -190,7 +190,8 @@ section, div {
   padding: 2vw 1vw;
   position: relative;
   width: 50%;
-  min-height: 133px; }
+  min-height: 133px;
+  margin-top: 6vw; }
   .piece img {
     width: auto;
     display: block;
@@ -228,6 +229,22 @@ section, div {
     font-weight: 400;
     font-size: 7vw; }
 
+.piece__offer .piece__title {
+  width: 100%;
+  font-size: 5vw;
+  text-align: center; }
+  .piece__offer .piece__title .number {
+    display: inline-block;
+    font-family: "Parisienne", cursive;
+    color: #ffb3a1;
+    font-size: 16vw;
+    font-weight: 400; }
+  .piece__offer .piece__title .middle {
+    font-family: "Parisienne", cursive;
+    text-transform: none;
+    font-size: 7.5vw;
+    font-weight: 400; }
+
 /*it is NOT double content ('s')*/
 .piece__button {
   display: none; }
@@ -240,6 +257,18 @@ section, div {
   border: 0;
   margin-top: 2vw;
   margin-bottom: 2vw; }
+
+.piece__offer .piece__offer__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 6vw; }
+.piece__offer .offer {
+  font-size: 4.5vw;
+  font-family: "Playfair Display", serif;
+  color: black;
+  text-transform: uppercase; }
+  .piece__offer .offer .offer--pink {
+    color: #ffb3a1; }
 
 .subline-verse {
   width: 10vw;
