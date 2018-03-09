@@ -20,7 +20,7 @@ $(document).ready(function() {
   //Finding the min-heigh of pieces
   function Min_height_piece(){
     let piece__plate = $("#plate");
-    let height = piece__plate.height();
+    let height = piece__plate.innerHeight();
     let piece = $(".piece");
     piece.css('min-height',height);
     console.log(height);

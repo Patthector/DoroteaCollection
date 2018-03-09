@@ -154,10 +154,6 @@ section, div {
     text-transform: capitalize; }
 
 .piece {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 2vw 1vw;
   position: relative;
   width: 50%;
@@ -174,8 +170,7 @@ section, div {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  line-height: 7vw;
-  margin-bottom: 10vw; }
+  line-height: 7vw; }
   .pieces__title .first {
     color: #ffb3a1;
     text-transform: none;
@@ -224,7 +219,7 @@ section, div {
   display: block;
   width: 80%;
   background: #ffb3a1;
-  height: .2vw;
+  height: .3vw;
   border: 0;
   margin-top: 2vw;
   margin-bottom: 2vw; }
@@ -246,34 +241,37 @@ section, div {
   width: 100%;
   color: #ffffff;
   font-family: "Playfair Display", serif;
-  font-size: 16.5vw;
+  font-size: 24vw;
   font-weight: 700;
-  letter-spacing: -1.5vw;
+  letter-spacing: -2vw;
   text-align: center; }
 
 .amazon__exclusive {
   position: absolute;
   display: block;
   width: 100%;
-  top: 50%;
+  top: 46%;
   left: 0;
-  font-size: 2.8vw;
-  letter-spacing: 1vw;
+  font-size: 4vw;
+  letter-spacing: 1.5vw;
   font-style: italic;
   font-weight: 400;
   background: white;
-  color: black; }
+  color: black;
+  padding-bottom: .5vw; }
 
 .amazon__content {
   font-family: "Playfair Display", serif;
-  font-size: 1vw;
-  color: #fff;
-  line-height: 1.8vw;
+  font-size: 2.2vw;
+  color: #000;
+  background: white;
+  line-height: 3vw;
+  letter-spacing: .1vw;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 0 0 5vw 0;
   margin-left: auto;
-  padding-bottom: 2vw; }
+  text-align: center; }
 
 .subline-verse {
   width: 10vw;
@@ -353,7 +351,14 @@ section, div {
   flex-wrap: wrap;
   justify-content: flex-start;
   flex: 1 50%;
+  list-style: none;
   padding: 0; }
+
+.header {
+  margin-bottom: 15vw; }
+
+.handmadeandhandpaint {
+  margin-bottom: 15vw; }
 
 .collage-sm {
   display: grid;
@@ -361,7 +366,8 @@ section, div {
   grid-auto-rows: minmax(10px, auto);
   grid-auto-flow: dense;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  margin-bottom: 10vw; }
   .collage-sm div {
     padding: 2.5%; }
     .collage-sm div img {
@@ -455,11 +461,19 @@ section, div {
   position: relative;
   width: 100%;
   margin: 0;
+  margin-bottom: 15vw;
   padding: 0; }
+
+.texture {
+  margin-bottom: 15vw; }
+
+.gallery {
+  margin-bottom: 10vw; }
 
 .amazon-affiliate-program {
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 15vw;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+0,de6868+40,ffb3a1+85 */
   background: #ffb3a1;
   /* Old browsers */
