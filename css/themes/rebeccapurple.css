@@ -257,16 +257,25 @@ p {
     text-align: center;
     margin-bottom: 0; }
   .fishing .amazon__button {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95 */
     background: #ffb3a1;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+    background: -moz-linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+    background: -webkit-linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+    background: linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#de6869',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */
+    /*
+    // Needs latest Compass, add '@import "compass"' to your scss
+    // Permalink - use to edit and share this gradient:
+    // http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95
+    background-color: #ffb3a1; // Old browsers
+    @include filter-gradient(#ffb3a1, #de6869, horizontal); // IE6-9 fallback on horizontal gradient
+    @include background-image(linear-gradient(left bottom, #ffb3a1 11%,#de6869 30%,#ffb3a1 67%,#de6869 95%));
+    */
     font-family: "Playfair Display", serif;
     font-size: 6vw;
     text-transform: uppercase;
@@ -411,12 +420,16 @@ p {
 
 .modal-header {
   padding: 3vw 6vw;
-  position: relative; }
+  position: relative;
+  background: rgba(255, 179, 161, 0.8); }
   .modal-header .piece__title {
     font-size: 6vw;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: white; }
     .modal-header .piece__title .first {
-      font-size: 8.5vw; }
+      font-size: 9vw;
+      margin: -2.5vw;
+      color: black; }
 
 .modal-body {
   padding-top: 10vw; }
@@ -427,7 +440,8 @@ p {
     top: -5vw; }
     .modal-body .phh__carousel-indicators .indicator {
       background-color: #ffb3a1 !important;
-      height: 1.5vh; }
+      height: 1.5vh;
+      border-radius: 5px; }
     .modal-body .phh__carousel-indicators li.active {
       border: .6vh solid white !important;
       background-color: black; }

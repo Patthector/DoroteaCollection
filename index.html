@@ -214,18 +214,17 @@
       <h2 class = "pieces__title">Dorotea Collection <br/><span class = "first">Pieces</span></h2>
       <ul class = "col-12 gallery__list-pieces">
         <!--COFFEE/TEA MUG -->
-        <li class = "piece" data-toggle="modal" data-target="#moda_coffee-tea-mug">
+        <li class = "piece" data-toggle="modal" data-target="#modal__coffee-tea-mug">
           <h3 class = "piece__title">Coffee/Tea <span class = "first">mug</span></h3>
           <img class = "img"
-               srcset = "./images/gallery/mug-480.jpg 480w, ./images/gallery/mug-900.jpg 900w, ./images/gallery/mug-1250.jpg 1250w"
+               srcset = "./images/gallery/480/mug-480.jpg 480w, ./images/gallery/mug-900.jpg 900w, ./images/gallery/mug-1250.jpg 1250w"
                 size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
                src = "./images/gallery/mug-1250.jpg"
             alt = "A Coffee/Tea Mug from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
             title = "Coffee/Tea Mug" />
-          <button class = "piece__button" href = "" >More Info</button>
         </li>
         <!-- MODAL__COFFEE/TEA MUG -->
-        <div class="modal fade" id="moda_coffee-tea-mug" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal__coffee-tea-mug" tabindex="-1" role="dialog" aria-labelledby="modal__coffee-tea-mug" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -237,25 +236,32 @@
               <div class="modal-body">
                 <div class = "row">
                   <div class = "col-12">
-                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <!--CAROUSEL-->
+                    <div id="carousel__coffee-tea-mug-Indicators" class="carousel slide" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators phh__carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicator"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1" class = "indicator"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="2" class = "indicator"></li>
+                          <li data-target="#carousel__coffee-tea-mug-Indicators" data-slide-to="0" class="active indicator"></li>
+                          <li data-target="#carousel__coffee-tea-mug-Indicators" data-slide-to="1" class = "indicator"></li>
+                          <li data-target="#carousel__coffee-tea-mug-Indicators" data-slide-to="2" class = "indicator"></li>
+                          <li data-target="#carousel__coffee-tea-mug-Indicators" data-slide-to="3" class = "indicator"></li>
                         </ol>
                         <div class="carousel-inner">
-                          <div class="carousel-item carousel-item active">
-                            <img class="img rounded" src="./images/gallery/mug-480.jpg" alt="First slide">
+                          <div class="carousel-item active">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/mug-carousel/mug.jpg" alt="First coffee/tea mug slide">
                           </div>
-                          <div class="carousel-item carousel-item">
-                            <img class="img rounded" src="./images/gallery/mug_pic1-480.jpg" alt="Second slide">
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/mug-carousel/mug_pic1.jpg" alt="Second coffee/tea mug slide">
                           </div>
-                          <div class="carousel-item carousel-item">
-                            <img class="img rounded" src="./images/gallery/mug_pic2-480.jpg" alt="Third slide">
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/mug-carousel/mug_pic2.jpg" alt="Third coffee/tea mug slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/mug-carousel/mug_pic3.jpg" alt="Fourth coffee/tea mug slide">
                           </div>
                         </div>
                     </div>
+                    <!--end CAROUSEL-->
                     <p class = "modal-body__content"><b>Set of 4</b>. Each mug holds <b>16-ounces</b>. Measures <b>3.75-inch</b> high. <b>Microwave and Dishwasher safe</b>.</p>
+                    <hr/>
                     <div class = "fishing">
                       <p>Just on</p>
                       <button class = "btn amazon__button">Amazon</button>
@@ -273,44 +279,211 @@
             </div>
           </div>
         </div>
-
-        <li class = "piece">
+        <!--end__MODAL__COFFEE-TEA-MUG-->
+        <!--***-->
+        <!--SMALL FRUIT-->
+        <li class = "piece" data-toggle="modal" data-target="#modal__small-fruit">
           <h3 class = "piece__title">Small Fruit <span class = "first">bowl</span></h3>
           <img class = "img"
                size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
-               srcset = "./images/gallery/small-bowl-480.jpg 480w, ./images/gallery/small-bowl-900.jpg 900w, ./images/gallery/small-bowl-1250.jpg 1250w"
+               srcset = "./images/gallery/480/small-bowl-480.jpg 480w, ./images/gallery/small-bowl-900.jpg 900w, ./images/gallery/small-bowl-1250.jpg 1250w"
                src = "./images/gallery/small-bowl-1250.jpg"
             alt = "A Small Fruit Bowl from Dorotea Collection. Made by Carolina Silve. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
             title = "Small Fruit Bowl" />
           <button class = "piece__button" href = "" >More Info</button>
         </li>
+        <!-- MODAL__SMAL-FRUIT -->
+        <div class="modal fade" id="modal__small-fruit" tabindex="-1" role="dialog" aria-labelledby="modal__small-fruit" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class = "piece__title">Small Fruit <span class = "first">bowl</span></h3>
+                <button type="button" class="close modal-header__button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class = "row">
+                  <div class = "col-12">
+                    <div id="carousel__small-fruit-Indicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators phh__carousel-indicators">
+                          <li data-target="#carousel__small-fruit-Indicators" data-slide-to="0" class="active indicator"></li>
+                          <li data-target="#carousel__small-fruit-Indicators" data-slide-to="1" class = "indicator"></li>
+                          <li data-target="#carousel__small-fruit-Indicators" data-slide-to="2" class = "indicator"></li>
+                          <li data-target="#carousel__small-fruit-Indicators" data-slide-to="3" class = "indicator"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/fruit-bowl-carousel/fruit-bowl.jpg" alt="First small fruit slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/fruit-bowl-carousel/fruit-bowl-pic1.jpg" alt="Second small fruit slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/fruit-bowl-carousel/fruit-bowl-pic2.jpg" alt="Third small fruit slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/fruit-bowl-carousel/fruit-bowl-pic3.jpg" alt="Third small fruit slide">
+                          </div>
+                        </div>
+                    </div>
+                    <p class = "modal-body__content"><b>Set of 4</b>. Each bowl measures <b> 5.25-inch</b> diameter. Assorted. <b>Microwave and Dishwasher safe</b>.</p>
+                    <hr/>
+                    <div class = "fishing">
+                      <p>Just on</p>
+                      <button class = "btn amazon__button">Amazon</button>
+                      <i class = "exclusive">(amazon exclusive)</i>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p class = "modal-footer__content">More information about the product is available on
+                  <a href = "#" class = "">Amazon</a>
+                  <span>(price, shippim options, costumer comments, similar products)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end__SMALL-FRUIT-->
         <hr class = "gallery__line"/>
-        <li class = "piece">
+        <!--SOUP CEREAL-->
+        <li class = "piece"  data-toggle="modal" data-target="#modal__soup-cereal">
           <h3 class = "piece__title">Soup/Cereal <span class = "first">bowl</span></h3>
           <img class = "img"
                size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
-               srcset = "./images/gallery/bowl-480.jpg 480w, ./images/gallery/bowl-900.jpg 900w, ./images/gallery/bowl-1250.jpg 1250w"
+               srcset = "./images/gallery/480/bowl-480.jpg 480w, ./images/gallery/bowl-900.jpg 900w, ./images/gallery/bowl-1250.jpg 1250w"
                src = "./images/gallery/bowl-1250.jpg"
             alt = "A Soup/Cereal Bowl from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
             title = "Soup/Cereal Bowl" />
-          <button class = "piece__button" href = "" >More Info</button>
         </li>
-        <li class = "piece" id = "plate">
+        <!-- MODAL__SOUP CEREAL -->
+        <div class="modal fade" id="modal__soup-cereal" tabindex="-1" role="dialog" aria-labelledby="modal__soup-cereal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class = "piece__title">Small Fruit <span class = "first">bowl</span></h3>
+                <button type="button" class="close modal-header__button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class = "row">
+                  <div class = "col-12">
+                    <div id="carousel__soup-cereal-Indicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators phh__carousel-indicators">
+                          <li data-target="#carousel__soup-cereal-Indicators" data-slide-to="0" class="active indicator"></li>
+                          <li data-target="#carousel__soup-cereal-Indicators" data-slide-to="1" class = "indicator"></li>
+                          <li data-target="#carousel__soup-cereal-Indicators" data-slide-to="2" class = "indicator"></li>
+                          <li data-target="#carousel__soup-cereal-Indicators" data-slide-to="3" class = "indicator"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/soup-cereal-carousel/soup-cereal.jpg" alt="First small fruit slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/soup-cereal-carousel/soup-cereal-pic1.jpg" alt="Second small fruit slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/soup-cereal-carousel/soup-cereal-pic2.jpg" alt="Third small fruit slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/soup-cereal-carousel/soup-cereal-pic3.jpg" alt="Third small fruit slide">
+                          </div>
+                        </div>
+                    </div>
+                    <p class = "modal-body__content"><b>Set of 4</b>. Each bowl measures <b> 7.25-inch</b> diameter. <b>Microwave</b> and <b>Dishwasher safe</b>.</p>
+                    <div class = "fishing">
+                      <p>Just on</p>
+                      <button class = "btn amazon__button">Amazon</button>
+                      <i class = "exclusive">(amazon exclusive)</i>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p class = "modal-footer__content">More information about the product is available on
+                  <a href = "#" class = "">Amazon</a>
+                  <span>(price, shippim options, costumer comments, similar products)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end__SOUP CEREAL-->
+        <!--***-->
+        <!--DINNER PLATE -->
+        <li class = "piece" id = "plate" data-toggle="modal" data-target="#modal__dinner-plate">
           <h3 class = "piece__title">Dinner <span class = "first">plate</span></h3>
           <img class = "img"
                size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
-               srcset = "./images/gallery/plate-480.jpg 480w, ./images/gallery/plate-900.jpg 900w, ./images/gallery/plate-1250.jpg 1250w"
+               srcset = "./images/gallery/480/plate-480.jpg 480w, ./images/gallery/plate-900.jpg 900w, ./images/gallery/plate-1250.jpg 1250w"
                src = "./images/gallery/plate-1250.jpg"
             alt = "A Dinner Plate from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
             title = "Dinner Plate" />
           <button class = "piece__button" href = "" >More Info</button>
         </li>
+        <!-- MODAL__DINNER PLATE -->
+        <div class="modal fade" id="modal__dinner-plate" tabindex="-1" role="dialog" aria-labelledby="modal__dinner-plate" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class = "piece__title">Dinner <span class = "first">plate</span></h3>
+                <button type="button" class="close modal-header__button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class = "row">
+                  <div class = "col-12">
+                    <div id="carousel__dinner-plate-Indicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators phh__carousel-indicators">
+                          <li data-target="#carousel__dinner-plate-Indicators" data-slide-to="0" class="active indicator"></li>
+                          <li data-target="#carousel__dinner-plate-Indicators" data-slide-to="1" class = "indicator"></li>
+                          <li data-target="#carousel__dinner-plate-Indicators" data-slide-to="2" class = "indicator"></li>
+                          <li data-target="#carousel__dinner-plate-Indicators" data-slide-to="3" class = "indicator"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/plate-carousel/dinner-plate.jpg" alt="First dinner plate slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/plate-carousel/dinner-plate-pic1.jpg" alt="Second dinner plate slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/plate-carousel/dinner-plate-pic2.jpg" alt="Third dinner plate slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img rounded img-fluid" src="./images/gallery/480/plate-carousel/dinner-plate-pic3.jpg" alt="Fourth dinner plate slide">
+                          </div>
+                        </div>
+                    </div>
+                    <p class = "modal-body__content"><b>Set of 4</b>. Each plate measures <b> 10.75-Inch</b> diameter. Colors gray and white. <b>Microwave and Dishwasher safe</b>.</p>
+                    <div class = "fishing">
+                      <p>Just on</p>
+                      <button class = "btn amazon__button">Amazon</button>
+                      <i class = "exclusive">(amazon exclusive)</i>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p class = "modal-footer__content">More information about the product is available on
+                  <a href = "#" class = "">Amazon</a>
+                  <span>(price, shippim options, costumer comments, similar products)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end__DINNER PLATE-->
         <hr class = "gallery__line"/>
         <li class = "piece">
           <h3  class = "piece__title">Oval Serving <span class = "first">platter</span></h3>
           <img class = "img"
                size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
-               srcset = "./images/gallery/oval-480.jpg 480w, ./images/gallery/oval-900.jpg 900w, ./images/gallery/oval-1250.jpg 1250w"
+               srcset = "./images/gallery/480/oval-480.jpg 480w, ./images/gallery/oval-900.jpg 900w, ./images/gallery/oval-1250.jpg 1250w"
                src = "./images/gallery/oval-1250.jpg"
             alt = "An Oval Serving Platter from Dorotea Collection. Made by Carolina Silve. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
             title = "Oval Serving Platter" />
@@ -320,7 +493,7 @@
           <h3 class = "piece__title">Salad/Dessert <span class = "first">plate</span></h3>
           <img class = "img"
                size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
-               srcset = "./images/gallery/salad-480.jpg 480w, ./images/gallery/salad-900.jpg 900w, ./images/gallery/salad-1250.jpg 1250w"
+               srcset = "./images/gallery/480/salad-480.jpg 480w, ./images/gallery/salad-900.jpg 900w, ./images/gallery/salad-1250.jpg 1250w"
                src = "./images/gallery/salad-1250.jpg"
             alt = "A Dinner Plate from Dorotea Collection. Made by Carolina Silva. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
             title = "Salad/Dessert Plate" />
@@ -331,7 +504,7 @@
           <h3 class = "piece__title">Vegetable Serving <span class = "first">bowl</span></h3>
           <img class = "img"
                size = "(max-width: 480px) 480px, (max-width: 900px) 900px, 1250px"
-               srcset = "./images/gallery/serving-bowl-480.jpg 480w, ./images/gallery/serving-bowl-900.jpg 900w, ./images/gallery/serving-bowl-1250.jpg 1250w"
+               srcset = "./images/gallery/480/serving-bowl-480.jpg 480w, ./images/gallery/serving-bowl-900.jpg 900w, ./images/gallery/serving-bowl-1250.jpg 1250w"
                src = "./images/gallery/serving-bowl-1250.jpg"
             alt = "A Vegetable Serving Bowl from Dorotea Collection. Made by Carolina Silve. Made of ceramic. Microwave safe. Dishwasher safe. REMEMBER TO PUT THE LIQUIDS. REMEMBER TO PUT THE SIZE OF THE MUG"
             title = "Vegetable Serving Bowl" />

@@ -10,6 +10,7 @@
     .indicator{
       background-color: $color-primary !important;
       height: 1.5vh;
+      border-radius: 5px;      
     }
     li.active{
       border:.6vh solid white !important;

@@ -9,12 +9,20 @@
     margin-bottom: 0;
   }
   .amazon__button{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95 */
     background: #ffb3a1; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+    background: -moz-linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #ffb3a1 11%,#de6869 30%,#ffb3a1 67%,#de6869 95%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #ffb3a1 11%,#de6869 30%,#ffb3a1 67%,#de6869 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#de6869',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*
+// Needs latest Compass, add '@import "compass"' to your scss
+// Permalink - use to edit and share this gradient:
+// http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95
+background-color: #ffb3a1; // Old browsers
+@include filter-gradient(#ffb3a1, #de6869, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(linear-gradient(left bottom, #ffb3a1 11%,#de6869 30%,#ffb3a1 67%,#de6869 95%));
+*/
     font-family: $default-ff;
     font-size: 6vw;
     text-transform: uppercase;
