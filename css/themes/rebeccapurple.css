@@ -25,7 +25,7 @@ a {
   text-decoration: none;
   transition: color .2s; }
 
-img {
+.img {
   height: auto;
   display: block;
   width: 100%; }
@@ -48,6 +48,9 @@ section, div {
   margin-right: 0;
   padding-left: 0;
   padding-right: 0; }
+
+p {
+  margin-bottom: 0; }
 
 .header_title {
   position: relative;
@@ -236,10 +239,63 @@ section, div {
   .piece__offer .offer .offer--pink {
     color: #ffb3a1; }
 
+.modal-header__button {
+  position: absolute;
+  top: 25%;
+  right: 2vw; }
+
+.modal-body__content {
+  font-family: "Playfair Display", serif;
+  margin-top: 6vw; }
+
+.fishing {
+  text-align: center; }
+  .fishing p {
+    font-family: "Parisienne", cursive;
+    font-size: 8vw;
+    color: black;
+    text-align: center;
+    margin-bottom: 0; }
+  .fishing .amazon__button {
+    background: #ffb3a1;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    font-family: "Playfair Display", serif;
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1vw;
+    border-radius: 25px; }
+  .fishing i {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 3vw;
+    font-style: italic;
+    letter-spacing: .1vw; }
+
+.modal-footer__content {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-size: 3vw;
+  margin-bottom: 0; }
+  .modal-footer__content a {
+    color: blue;
+    text-decoration: underline; }
+  .modal-footer__content span {
+    font-style: italic; }
+
 .amazon__title {
   position: relative;
   width: 100%;
-  color: #ffffff;
+  color: #ffb3a1;
   font-family: "Playfair Display", serif;
   font-size: 24vw;
   font-weight: 700;
@@ -250,9 +306,9 @@ section, div {
   position: absolute;
   display: block;
   width: 100%;
-  top: 46%;
+  top: 50%;
   left: 0;
-  font-size: 4vw;
+  font-size: 3vw;
   letter-spacing: 1.5vw;
   font-style: italic;
   font-weight: 400;
@@ -269,8 +325,7 @@ section, div {
   letter-spacing: .1vw;
   text-transform: uppercase;
   padding: 0;
-  margin: 0 0 5vw 0;
-  margin-left: auto;
+  margin-bottom: 5vw;
   text-align: center; }
 
 .subline-verse {
@@ -353,6 +408,33 @@ section, div {
   flex: 1 50%;
   list-style: none;
   padding: 0; }
+
+.modal-header {
+  padding: 3vw 6vw;
+  position: relative; }
+  .modal-header .piece__title {
+    font-size: 6vw;
+    margin-bottom: 0; }
+    .modal-header .piece__title .first {
+      font-size: 8.5vw; }
+
+.modal-body {
+  padding-top: 10vw; }
+  .modal-body .img {
+    width: auto;
+    margin: auto; }
+  .modal-body .phh__carousel-indicators {
+    top: -5vw; }
+    .modal-body .phh__carousel-indicators .indicator {
+      background-color: #ffb3a1 !important;
+      height: 1.5vh; }
+    .modal-body .phh__carousel-indicators li.active {
+      border: .6vh solid white !important;
+      background-color: black; }
+
+.modal-footer {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 3.5vw; }
 
 .header {
   margin-bottom: 15vw; }
@@ -470,21 +552,26 @@ section, div {
 .gallery {
   margin-bottom: 10vw; }
 
+.list__thumbnail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0; }
+
 .amazon-affiliate-program {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 15vw;
+  background-color: white;
+  border: 1vw #ffb3a1 solid;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+0,de6868+40,ffb3a1+85 */
-  background: #ffb3a1;
-  /* Old browsers */
-  background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  /*background: #ffb3a1; /* Old browsers */
+  /*background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%); /* FF3.6-15 */
+  /*background: -webkit-linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* Chrome10-25,Safari5.1-6 */
+  /*background: linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   /*
   background-color: #ffb3a1; // Old browsers
   @include filter-gradient(#ffb3a1, #ffb3a1, horizontal); // IE6-9 fallback on horizontal gradient

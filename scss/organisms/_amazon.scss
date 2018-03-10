@@ -4,16 +4,17 @@
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 15vw;
-
+  background-color: white;
+  border: 1vw $color-primary solid;
 
 
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+0,de6868+40,ffb3a1+85 */
-background: #ffb3a1; /* Old browsers */
-background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*background: #ffb3a1; /* Old browsers */
+/*background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(45deg, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#ffb3a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 //sass && compass
 // Needs latest Compass, add '@import "compass"' to your scss

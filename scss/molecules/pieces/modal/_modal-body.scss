@@ -1,0 +1,19 @@
+
+.modal-body{
+  padding-top: 10vw;
+  .img{
+    width: auto;
+    margin: auto;
+  }
+  .phh__carousel-indicators{
+    top:-5vw;
+    .indicator{
+      background-color: $color-primary !important;
+      height: 1.5vh;
+    }
+    li.active{
+      border:.6vh solid white !important;
+      background-color: black;
+    }
+  }
+}

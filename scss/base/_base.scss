@@ -30,7 +30,7 @@ a {
   transition: color .2s;
 }
 
-img {
+.img {
   height: auto;
   display: block;
   width: 100%;
@@ -54,4 +54,7 @@ section,div{
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
+}
+p{
+  margin-bottom: 0;
 }
