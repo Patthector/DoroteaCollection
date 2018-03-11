@@ -1,6 +1,8 @@
 $(document).ready(function() {
   console.log("hellos");
   Min_height_piece();
+
+
   //
   //THE GRID
   //
@@ -55,5 +57,10 @@ $(document).ready(function() {
   })
   */
 CreatingTheGrid();
+
+//CAROUSEL-SWIPE
+  $(".carousel").carousel({
+  swipe: 30 // percent-per-second, default is 50. Pass false to disable swipe
+  });
 
 });

@@ -1,16 +1,17 @@
 
 .modal-header{
-  padding: 3vw 6vw;
+  padding: 3vw 6vw 0;
   position: relative;
-  background: rgba($color-primary,0.8);
+  border:none;
+  //background: rgba($color-primary,0.8);
   .piece__title{
     font-size:6vw;
     margin-bottom: 0;
-    color:white;
+    color:$color-text-weak;
     .first{
       font-size:9vw;
       margin:-2.5vw;
-      color:black;
+      color:$color-primary;
     }
   }
 }

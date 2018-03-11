@@ -1,17 +1,27 @@
 
 .pieces__title{
-  color:black;
+  color:$color-text;
   font-family: $default-ff;
-  font-size:7vw;
+  font-size:11vw;
   text-transform: uppercase;
-  font-weight: $bold;
+  font-weight: $black;
   text-align: center;
-  line-height: 7vw;
+  line-height: 8.5vw;
+  //border: .5vw #ffb3a1 solid;
+  border-radius: 100%;
   .first{
+    color:$color-text;
+    text-transform: none;
+    font-family: $cursive-ff;
+    font-weight: $regular;
+    font-size:16vw;
+  }
+  .last{
     color:$color-primary;
     text-transform: none;
     font-family: $cursive-ff;
     font-weight: $regular;
-    font-size:12vw;
+    font-size:13vw;
+
   }
 }

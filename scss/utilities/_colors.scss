@@ -30,11 +30,11 @@ $color-note:                #666;
 $color-background:          $white;
 $color-background-shade:    $iron;
 $color-background-invert:   $hopbush;
-$color-text:                darken($pale-sky, 15);
-$color-text-weak:           $regent-grey;
+$color-text:                #26272a; 
+$color-text-weak:           #484c55;
 $color-text-strong:         $midnight-blue;
 $color-text-heading:        $regent-grey;
-$color-text-invert:         rgba($color-background, .75);
+$color-text-invert:         $white;
 $color-text-strong-invert:  $color-background;
 
 // Links

@@ -10,11 +10,27 @@
     .indicator{
       background-color: $color-primary !important;
       height: 1.5vh;
-      border-radius: 5px;      
+      border-radius: 5px;
     }
     li.active{
-      border:.6vh solid white !important;
+      border:2px solid white !important;
       background-color: black;
     }
+  }
+  .carousel-item--caption{
+    padding-bottom: 10vw;
+  }
+  .carousel-caption{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    h5{
+      color:$color-text-weak;
+    }
+  }
+  .pieces16-list{
+    list-style:circle;
+    padding: 5vw 6vw 0;
   }
 }

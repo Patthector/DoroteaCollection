@@ -57,7 +57,7 @@ p {
   margin: -3.2vw 0 0 0;
   padding: 0;
   font-family: "Playfair Display", serif;
-  color: black;
+  color: #26272a;
   width: auto;
   font-size: 6.5vw;
   font-weight: 700;
@@ -99,14 +99,14 @@ p {
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
     font-size: 12vw;
-    color: black;
+    color: #26272a;
     letter-spacing: -.3vw; }
   .handmadeAndHandpaint_title .middle {
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-size: 10vw;
     text-transform: uppercase;
-    color: black; }
+    color: #26272a; }
   .handmadeAndHandpaint_title .last {
     font-family: "Parisienne", cursive;
     font-size: 18vw;
@@ -138,7 +138,7 @@ p {
   width: 100%;
   font-family: "Playfair Display", serif;
   font-size: 6vw;
-  color: black;
+  color: #26272a;
   text-align: center;
   line-height: 8vw;
   word-spacing: -2vw; }
@@ -167,23 +167,29 @@ p {
     margin: auto; }
 
 .pieces__title {
-  color: black;
+  color: #26272a;
   font-family: "Playfair Display", serif;
-  font-size: 7vw;
+  font-size: 11vw;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
-  line-height: 7vw; }
+  line-height: 8.5vw;
+  border-radius: 100%; }
   .pieces__title .first {
+    color: #26272a;
+    text-transform: none;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-size: 16vw; }
+  .pieces__title .last {
     color: #ffb3a1;
     text-transform: none;
     font-family: "Parisienne", cursive;
     font-weight: 400;
-    font-size: 12vw; }
+    font-size: 13vw; }
 
 .piece__title {
   width: 100%;
-  color: black;
   font-family: "Playfair Display", serif;
   font-size: 5vw;
   text-transform: uppercase;
@@ -215,9 +221,6 @@ p {
     font-weight: 400; }
 
 /*it is NOT double content ('s')*/
-.piece__button {
-  display: none; }
-
 .gallery__line {
   display: block;
   width: 80%;
@@ -229,12 +232,11 @@ p {
 
 .piece__offer .piece__offer__list {
   list-style: none;
-  padding-left: 0;
-  margin-top: 6vw; }
+  padding-left: 5vw;
+  margin-top: 5vw; }
 .piece__offer .offer {
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   font-family: "Playfair Display", serif;
-  color: black;
   text-transform: uppercase; }
   .piece__offer .offer .offer--pink {
     color: #ffb3a1; }
@@ -247,6 +249,13 @@ p {
 .modal-body__content {
   font-family: "Playfair Display", serif;
   margin-top: 6vw; }
+
+.pieces16-item {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 3vw; }
+  .pieces16-item a {
+    font-weight: 900;
+    color: #484c55; }
 
 .fishing {
   text-align: center; }
@@ -348,14 +357,14 @@ p {
 .dorotea__mobile-verse {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  color: black;
+  color: #26272a;
   font-size: 2.8vw;
   letter-spacing: 0.15vw;
   line-height: 4vw; }
 
 .dorotea__mobile-content {
   font-family: "Playfair Display", serif;
-  color: #343a40;
+  color: #484c55;
   font-size: 3.3vw;
   letter-spacing: 0.1vw;
   line-height: 5vw; }
@@ -419,17 +428,17 @@ p {
   padding: 0; }
 
 .modal-header {
-  padding: 3vw 6vw;
+  padding: 3vw 6vw 0;
   position: relative;
-  background: rgba(255, 179, 161, 0.8); }
+  border: none; }
   .modal-header .piece__title {
     font-size: 6vw;
     margin-bottom: 0;
-    color: white; }
+    color: #484c55; }
     .modal-header .piece__title .first {
       font-size: 9vw;
       margin: -2.5vw;
-      color: black; }
+      color: #ffb3a1; }
 
 .modal-body {
   padding-top: 10vw; }
@@ -443,8 +452,20 @@ p {
       height: 1.5vh;
       border-radius: 5px; }
     .modal-body .phh__carousel-indicators li.active {
-      border: .6vh solid white !important;
+      border: 2px solid white !important;
       background-color: black; }
+  .modal-body .carousel-item--caption {
+    padding-bottom: 10vw; }
+  .modal-body .carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%; }
+    .modal-body .carousel-caption h5 {
+      color: #484c55; }
+  .modal-body .pieces16-list {
+    list-style: circle;
+    padding: 5vw 6vw 0; }
 
 .modal-footer {
   background: rgba(0, 0, 0, 0.08);

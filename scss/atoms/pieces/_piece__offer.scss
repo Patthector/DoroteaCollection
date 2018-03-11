@@ -3,13 +3,13 @@
 
   .piece__offer__list{
     list-style: none;
-    padding-left: 0;
-    margin-top: 6vw;
+    padding-left: 5vw;
+    margin-top: 5vw;
   }
   .offer{
-    font-size:4.5vw;
+    font-size:3.5vw;
     font-family: $default-ff;
-    color:black;
+    //color:black;
     text-transform: uppercase;
 
     .offer--pink{
