@@ -1,0 +1,17 @@
+
+#modal__collage{
+  .modal-body{
+    padding:1vw;
+  }
+}
+
+.modal__collage--close{
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  color: #da2828;
+  font-size:8vw;
+  opacity: .8;
+  text-shadow: 2px 0px 1px #000000;
+  margin: 1vw 3vw;
+}

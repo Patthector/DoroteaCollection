@@ -1,19 +1,21 @@
-
+.gallery .carousel{
+  padding-bottom: 5vw;
+}
 .modal-body{
-  padding-top: 10vw;
   .img{
     width: auto;
     margin: auto;
   }
   .phh__carousel-indicators{
-    top:-5vw;
+    bottom:0;
     .indicator{
       background-color: $color-primary !important;
       height: 1.5vh;
       border-radius: 5px;
+      width: 9px;
     }
     li.active{
-      border:2px solid white !important;
+      border:1.5px solid white !important;
       background-color: black;
     }
   }

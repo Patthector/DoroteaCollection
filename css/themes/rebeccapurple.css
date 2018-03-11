@@ -394,6 +394,19 @@ p {
   bottom: 0;
   left: 10%; }
 
+#modal__collage .modal-body {
+  padding: 1vw; }
+
+.modal__collage--close {
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  color: #da2828;
+  font-size: 8vw;
+  opacity: .8;
+  text-shadow: 2px 0px 1px #000000;
+  margin: 1vw 3vw; }
+
 .nature__image-container {
   display: block;
   position: relative;
@@ -432,6 +445,9 @@ p {
   position: relative;
   border: none; }
   .modal-header .piece__title {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
     font-size: 6vw;
     margin-bottom: 0;
     color: #484c55; }
@@ -440,32 +456,34 @@ p {
       margin: -2.5vw;
       color: #ffb3a1; }
 
-.modal-body {
-  padding-top: 10vw; }
-  .modal-body .img {
-    width: auto;
-    margin: auto; }
-  .modal-body .phh__carousel-indicators {
-    top: -5vw; }
-    .modal-body .phh__carousel-indicators .indicator {
-      background-color: #ffb3a1 !important;
-      height: 1.5vh;
-      border-radius: 5px; }
-    .modal-body .phh__carousel-indicators li.active {
-      border: 2px solid white !important;
-      background-color: black; }
-  .modal-body .carousel-item--caption {
-    padding-bottom: 10vw; }
-  .modal-body .carousel-caption {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%; }
-    .modal-body .carousel-caption h5 {
-      color: #484c55; }
-  .modal-body .pieces16-list {
-    list-style: circle;
-    padding: 5vw 6vw 0; }
+.gallery .carousel {
+  padding-bottom: 5vw; }
+
+.modal-body .img {
+  width: auto;
+  margin: auto; }
+.modal-body .phh__carousel-indicators {
+  bottom: 0; }
+  .modal-body .phh__carousel-indicators .indicator {
+    background-color: #ffb3a1 !important;
+    height: 1.5vh;
+    border-radius: 5px;
+    width: 9px; }
+  .modal-body .phh__carousel-indicators li.active {
+    border: 1.5px solid white !important;
+    background-color: black; }
+.modal-body .carousel-item--caption {
+  padding-bottom: 10vw; }
+.modal-body .carousel-caption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%; }
+  .modal-body .carousel-caption h5 {
+    color: #484c55; }
+.modal-body .pieces16-list {
+  list-style: circle;
+  padding: 5vw 6vw 0; }
 
 .modal-footer {
   background: rgba(0, 0, 0, 0.08);
@@ -498,14 +516,17 @@ p {
 .grid-sm-7 {
   grid-column-end: span 7; }
 
-.grid-sm-8 {
-  grid-column-end: span 8; }
+.grid-sm-6 {
+  grid-column-end: span 6; }
 
 .grid-sm-4 {
   grid-column-end: span 4; }
 
 .grid-sm-3 {
   grid-column-end: span 3; }
+
+.grid-sm-8 {
+  grid-column-end: span 8; }
 
 .grid-sm-12 {
   grid-column-end: span 12; }
