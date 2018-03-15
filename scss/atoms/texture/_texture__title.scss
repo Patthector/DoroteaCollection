@@ -25,3 +25,21 @@
     text-transform: capitalize;
   }
 }
+
+@media(min-width:map-get($breakpoints,small)){
+  .texture__title{
+    line-height: 6vw;
+    word-spacing: -1vw;
+    .first{
+      font-size:11vw;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 8vw;
+      letter-spacing: -.7vw;
+    }
+    .last{
+      font-size:12vw;
+    }
+  }
+}

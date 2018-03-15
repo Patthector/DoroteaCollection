@@ -34,6 +34,7 @@ a {
   height: auto;
   display: block;
   width: 100%;
+  margin: auto;
 }
 
 h1,
@@ -45,10 +46,12 @@ h6 {
   font-family: $font-family-display;
   font-weight: normal;
 }
+/*
 section,div{
   margin: 0;
   padding: 0;
 }
+
 .row,.container-fluid{
   margin-left: 0;
   margin-right: 0;
@@ -57,4 +60,4 @@ section,div{
 }
 p{
   margin-bottom: 0;
-}
+}*/

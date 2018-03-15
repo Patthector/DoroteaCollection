@@ -6,4 +6,9 @@
   margin: 0;
   margin-bottom: 15vw;
   padding: 0;
+  padding-bottom: 95px;//just for screen less than 480px
+  
+  @media(min-width: map-get($breakpoints,small)){
+    padding: 0;
+  }
 }

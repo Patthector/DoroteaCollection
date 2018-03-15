@@ -1,4 +1,10 @@
 
 .dorotea__mobile-verse{
+  //MOBILE less than 480px
   @include dorotea__verse(2.8vw, .15vw, 4vw);
+  margin-bottom: 0;
+  //TABLET SCREEN or BIG MOBILES
+    @media(min-width:map-get($breakpoints,small)){
+        @include dorotea__verse(2vw, .15vw, 3vw);
+    }
 }

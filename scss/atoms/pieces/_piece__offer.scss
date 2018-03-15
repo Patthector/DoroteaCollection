@@ -3,15 +3,18 @@
 
   .piece__offer__list{
     list-style: none;
-    padding-left: 5vw;
-    margin-top: 5vw;
+    padding-left: 0;
   }
   .offer{
-    font-size:3.5vw;
+    font-size:5vw;
+    @media(min-width:321px){
+      font-size:3.5vw;
+    }
+    @media(min-width:map-get($breakpoints,small)){
+      font-size:2.8vw;
+    }
     font-family: $default-ff;
-    //color:black;
     text-transform: uppercase;
-
     .offer--pink{
       color:$color-primary;
     }

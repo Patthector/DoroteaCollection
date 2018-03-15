@@ -1,38 +1,103 @@
 
 .piece__title{
   width: 100%;
-  //color:black;
   font-family: $default-ff;
-  font-size:5vw;
+  font-size:6vw;//per one column
   text-transform: uppercase;
   font-weight: $bold;
   text-align: center;
-  line-height: 5vw;
-  margin-bottom:3vw;
+  line-height: 6.5vw;
   .first{
+    display: block;
     color:$color-primary;
     text-transform: none;
     font-family: $cursive-ff;
     font-weight: $regular;
-    font-size:7vw;
+    font-size:12.5vw;//per one column
+    &--plate{
+      display: inline-block;
+    }
+  }
+  @media(min-width:321px){
+    font-size:4vw;//per tow columns
+    line-height: 4vw;
+    .first{
+      font-size:7.5vw;
+    }
+  }
+  @media(min-width:map-get($breakpoints,small)){
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    .first{
+      font-size:7vw;
+    }
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 3vw;
+    line-height: 3vw;
+    .first{
+      font-size:6vw;
+    }
   }
 }
 .piece__offer .piece__title{
   width: 100%;
-  font-size: 5vw;
+  font-size: 7.5vw;
   text-align: center;
+  margin-top: 8vw;
+  @media(min-width:321px){
+    font-size: 4.5vw;
+    margin-top: 0;
+    line-height: 4vw;
+  }
+  @media(min-width:321px){
+    font-size: 4.5vw;
+    margin-top: 0;
+    line-height: 4vw;
+  }
   .number{
     display: inline-block;
     font-family: $cursive-ff;
     color:$color-primary;
-    font-size:16vw;
+    font-size:20vw;
+    @media(min-width:321px){
+      font-size:12vw;
+    }
     font-weight: $regular;
   }
   .middle{
     font-family:$cursive-ff;
     text-transform: none;
-    font-size:7.5vw;
+    font-size:10vw;
     font-weight: $regular;
+    @media(min-width:321px){
+      font-size:7vw;
+    }
   }
+}
 
+.piece__title--subtitle{
+  font-size:4.5vw;
+  .first{
+    font-size:8vw;
+    display: inline-block;
+  }
+  @media(min-width:321px){
+    font-size:3.5vw;
+    .first{
+      font-size:7vw;
+    }
+  }
+  @media(min-width:map-get($breakpoints,small)){
+    font-size: 2.8vw;
+    .first{
+      font-size:5.5vw;
+    }
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 2vw;
+    .first{
+      font-size:4vw;
+    }
+  }
 }

@@ -1,10 +1,25 @@
 
 .dorotea__mobile-content{
-  @include dorotea__content(
-          3.3vw,
-          .1vw,
-          5vw,
-          $cursive-ff,
-          14vw,
-          -.5vw);
+//MOBILE less than 480px
+    @include dorotea__content(
+            3.3vw,
+            .1vw,
+            5vw,
+            $cursive-ff,
+            12vw,
+            -.5vw);
+
+//TABLET SCREEN or BIG MOBILES
+  @media(min-width:map-get($breakpoints,small)){
+    @include dorotea__content(
+            2.3vw,
+            .1vw,
+            4vw,
+            $cursive-ff,
+            10vw,
+            -.5vw);
+  }
+
+
+
 }

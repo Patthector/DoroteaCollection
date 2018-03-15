@@ -2,12 +2,11 @@
 .pieces__title{
   color:$color-text;
   font-family: $default-ff;
-  font-size:11vw;
+  font-size:12vw;
   text-transform: uppercase;
   font-weight: $black;
   text-align: center;
   line-height: 8.5vw;
-  //border: .5vw #ffb3a1 solid;
   border-radius: 100%;
   .first{
     color:$color-text;
@@ -22,6 +21,15 @@
     font-family: $cursive-ff;
     font-weight: $regular;
     font-size:13vw;
-
+  }
+  @media(min-width: map-get($breakpoints,small)){
+    font-size:9vw;
+    line-height: 7vw;
+    .first{
+      font-size:13vw;
+    }
+    .last{
+      font-size:11vw;
+    }
   }
 }

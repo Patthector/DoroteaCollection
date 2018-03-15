@@ -5,7 +5,24 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  flex: 1 50%;
+  flex: 1 1 100%;
   list-style: none;
   padding: 0;
+  .container-img{    
+    position: relative;
+    .piece__title{
+        position: absolute;
+        top:10%;
+      @media(min-width: 321px){
+        top:0;
+      }
+    }
+  }
+
+  @media(max-width:map-get($breakpoints,small)){
+    flex:1 1 50%;
+  }
+  @media(max-width:map-get($breakpoints,large)){
+    flex:1 1 33%;
+  }
 }

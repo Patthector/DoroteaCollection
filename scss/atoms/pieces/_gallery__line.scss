@@ -1,10 +1,32 @@
 
 .gallery__line{
-  display: block;
+  //display: block;
   width: 80%;
   background: $color-primary;
-  height: .3vw;
+  height: 1px;
   border: 0;
-  margin-top: 2vw;
-  margin-bottom:2vw;
+  margin-top: 1vw;
+  margin-bottom:4vw;
+}
+
+@media(max-width: 320px){
+  .l-1{
+    display: block;
+  }
+}
+@media(min-width: 321px){
+  .l-1,.l-3{
+    display: none;
+  }
+  .l-2{
+    display: block;
+  }
+}
+@media(min-width: map-get($breakpoints,md)){
+  .l-3{
+    display: block;
+  }
+  .l-2{
+    display: none;
+  }
 }

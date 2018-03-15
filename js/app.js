@@ -1,6 +1,6 @@
 $(document).ready(function() {
   console.log("hellos");
-  Min_height_piece();
+  //Min_height_piece();
 
 
   //
@@ -13,7 +13,7 @@ $(document).ready(function() {
       ///SETTING THE HEIGHTS OF ALL THE CARDS
       //BuildingCard(children.eq(i));//get just the article
       var height = children.eq(i).height();
-      console.log(height,height);
+      //console.log(height,height);
       let repetitions = Math.ceil(height / 10);/*10px*/
       //console.log(repetitions,height);
       children.eq(i).css(`grid-row-end`,`span ${repetitions}`);
@@ -22,11 +22,16 @@ $(document).ready(function() {
   //Finding the min-heigh of pieces
   function Min_height_piece(){
     let piece__plate = $("#plate");
-    let height = piece__plate.innerHeight();
-    let piece = $(".piece");
+    let piece__mug = $("#mug");
+    let piece = $(".piece .container-img");
+    let height = piece__mug.height();
+    console.log(height,height);
     piece.css('min-height',height);
-    console.log(height);
-    console.log("plate");
+    height = piece__plate.height();
+    console.log(height,height);
+    piece.css('max-height',height);
+    let piece__offer = $(".piece__offer");
+    piece__offer.css('min-height',height);
   }
   /*
   $(window).on('load',function(){

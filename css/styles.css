@@ -28,7 +28,8 @@ a {
 .img {
   height: auto;
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin: auto; }
 
 h1,
 h2,
@@ -39,19 +40,21 @@ h6 {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal; }
 
-section, div {
+/*
+section,div{
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-.row, .container-fluid {
+.row,.container-fluid{
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
-  padding-right: 0; }
-
-p {
-  margin-bottom: 0; }
-
+  padding-right: 0;
+}
+p{
+  margin-bottom: 0;
+}*/
 .header_title {
   position: relative;
   margin: -3.2vw 0 0 0;
@@ -92,24 +95,24 @@ p {
 .handmadeAndHandpaint_title {
   margin: 0;
   padding: 0;
-  line-height: 9vw;
+  line-height: 6vw;
   text-align: center; }
   .handmadeAndHandpaint_title .first {
-    font-weight: 900;
+    font-weight: 400;
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
-    font-size: 12vw;
+    font-size: 7vw;
     color: #26272a;
     letter-spacing: -.3vw; }
   .handmadeAndHandpaint_title .middle {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    font-size: 10vw;
+    font-size: 14vw;
     text-transform: uppercase;
     color: #26272a; }
   .handmadeAndHandpaint_title .last {
     font-family: "Parisienne", cursive;
-    font-size: 18vw;
+    font-size: 12vw;
     color: #ffb3a1; }
 
 .nature__title {
@@ -132,6 +135,9 @@ p {
 
 .dorotea__mobile-content--color::first-letter {
   color: #ffb3a1 !important; }
+@media (min-width: 480px) {
+  .dorotea__mobile-content--color {
+    color: white !important; } }
 
 .texture__title {
   display: block;
@@ -156,20 +162,49 @@ p {
     font-size: 16vw;
     text-transform: capitalize; }
 
+@media (min-width: 480px) {
+  .texture__title {
+    line-height: 6vw;
+    word-spacing: -1vw; }
+    .texture__title .first {
+      font-size: 11vw;
+      letter-spacing: -.5vw; }
+    .texture__title .middle {
+      font-size: 8vw;
+      letter-spacing: -.7vw; }
+    .texture__title .last {
+      font-size: 12vw; } }
 .piece {
-  padding: 2vw 1vw;
-  position: relative;
-  width: 50%;
-  margin-top: 6vw; }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2vw 2vw 0;
+  position: relative; }
   .piece img {
     width: 100%;
     display: block;
     margin: auto; }
+  @media (max-width: 1500px) {
+    .piece {
+      width: 33%; } }
+  @media (max-width: 900px) {
+    .piece {
+      width: 50%; } }
+  @media (max-width: 320px) {
+    .piece {
+      width: 100%; } }
+
+.piece__offer {
+  order: 1; }
+  @media (min-width: 321px) {
+    .piece__offer {
+      order: 0; } }
 
 .pieces__title {
   color: #26272a;
   font-family: "Playfair Display", serif;
-  font-size: 11vw;
+  font-size: 12vw;
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
@@ -187,138 +222,270 @@ p {
     font-family: "Parisienne", cursive;
     font-weight: 400;
     font-size: 13vw; }
+  @media (min-width: 480px) {
+    .pieces__title {
+      font-size: 9vw;
+      line-height: 7vw; }
+      .pieces__title .first {
+        font-size: 13vw; }
+      .pieces__title .last {
+        font-size: 11vw; } }
 
 .piece__title {
   width: 100%;
   font-family: "Playfair Display", serif;
-  font-size: 5vw;
+  font-size: 6vw;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  line-height: 5vw;
-  margin-bottom: 3vw; }
+  line-height: 6.5vw; }
   .piece__title .first {
+    display: block;
     color: #ffb3a1;
     text-transform: none;
     font-family: "Parisienne", cursive;
     font-weight: 400;
-    font-size: 7vw; }
+    font-size: 12.5vw; }
+    .piece__title .first--plate {
+      display: inline-block; }
+  @media (min-width: 321px) {
+    .piece__title {
+      font-size: 4vw;
+      line-height: 4vw; }
+      .piece__title .first {
+        font-size: 7.5vw; } }
+  @media (min-width: 480px) {
+    .piece__title {
+      font-size: 3.5vw;
+      line-height: 3.5vw; }
+      .piece__title .first {
+        font-size: 7vw; } }
+  @media (min-width: 720px) {
+    .piece__title {
+      font-size: 3vw;
+      line-height: 3vw; }
+      .piece__title .first {
+        font-size: 6vw; } }
 
 .piece__offer .piece__title {
   width: 100%;
-  font-size: 5vw;
-  text-align: center; }
+  font-size: 7.5vw;
+  text-align: center;
+  margin-top: 8vw; }
+  @media (min-width: 321px) {
+    .piece__offer .piece__title {
+      font-size: 4.5vw;
+      margin-top: 0;
+      line-height: 4vw; } }
+  @media (min-width: 321px) {
+    .piece__offer .piece__title {
+      font-size: 4.5vw;
+      margin-top: 0;
+      line-height: 4vw; } }
   .piece__offer .piece__title .number {
     display: inline-block;
     font-family: "Parisienne", cursive;
     color: #ffb3a1;
-    font-size: 16vw;
+    font-size: 20vw;
     font-weight: 400; }
+    @media (min-width: 321px) {
+      .piece__offer .piece__title .number {
+        font-size: 12vw; } }
   .piece__offer .piece__title .middle {
     font-family: "Parisienne", cursive;
     text-transform: none;
-    font-size: 7.5vw;
+    font-size: 10vw;
     font-weight: 400; }
+    @media (min-width: 321px) {
+      .piece__offer .piece__title .middle {
+        font-size: 7vw; } }
+
+.piece__title--subtitle {
+  font-size: 4.5vw; }
+  .piece__title--subtitle .first {
+    font-size: 8vw;
+    display: inline-block; }
+  @media (min-width: 321px) {
+    .piece__title--subtitle {
+      font-size: 3.5vw; }
+      .piece__title--subtitle .first {
+        font-size: 7vw; } }
+  @media (min-width: 480px) {
+    .piece__title--subtitle {
+      font-size: 2.8vw; }
+      .piece__title--subtitle .first {
+        font-size: 5.5vw; } }
+  @media (min-width: 720px) {
+    .piece__title--subtitle {
+      font-size: 2vw; }
+      .piece__title--subtitle .first {
+        font-size: 4vw; } }
 
 /*it is NOT double content ('s')*/
 .gallery__line {
-  display: block;
   width: 80%;
   background: #ffb3a1;
-  height: .3vw;
+  height: 1px;
   border: 0;
-  margin-top: 2vw;
-  margin-bottom: 2vw; }
+  margin-top: 1vw;
+  margin-bottom: 4vw; }
 
+@media (max-width: 320px) {
+  .l-1 {
+    display: block; } }
+@media (min-width: 321px) {
+  .l-1, .l-3 {
+    display: none; }
+
+  .l-2 {
+    display: block; } }
+@media (min-width: 900px) {
+  .l-3 {
+    display: block; }
+
+  .l-2 {
+    display: none; } }
 .piece__offer .piece__offer__list {
   list-style: none;
-  padding-left: 5vw;
-  margin-top: 5vw; }
+  padding-left: 0; }
 .piece__offer .offer {
-  font-size: 3.5vw;
+  font-size: 5vw;
   font-family: "Playfair Display", serif;
   text-transform: uppercase; }
+  @media (min-width: 321px) {
+    .piece__offer .offer {
+      font-size: 3.5vw; } }
+  @media (min-width: 480px) {
+    .piece__offer .offer {
+      font-size: 2.8vw; } }
   .piece__offer .offer .offer--pink {
     color: #ffb3a1; }
 
-.modal-header__button {
-  position: absolute;
-  top: 25%;
-  right: 2vw; }
+.gallery__modal-header__title {
+  font-size: 6vw;
+  letter-spacing: -.2vw; }
+  .gallery__modal-header__title .first {
+    display: none;
+    font-size: 9.5vw;
+    margin-left: -2vw; }
+  @media (min-width: 480px) {
+    .gallery__modal-header__title {
+      font-size: 5vw;
+      letter-spacing: .01vw; }
+      .gallery__modal-header__title .first {
+        font-size: 7.5vw; } }
+  @media (min-width: 720px) {
+    .gallery__modal-header__title {
+      font-size: 3.5vw;
+      letter-spacing: .1vw; }
+      .gallery__modal-header__title .first {
+        font-size: 7vw; } }
 
-.modal-body__content {
+.gallery__modal-header__button {
+  position: absolute;
+  right: 12px;
+  top: 3px; }
+
+.gallery__content {
   font-family: "Playfair Display", serif;
   margin-top: 6vw; }
 
-.pieces16-item {
+.gallery__pieces16-item {
   font-family: "Playfair Display", serif;
   margin-bottom: 3vw; }
-  .pieces16-item a {
+  .gallery__pieces16-item a {
     font-weight: 900;
     color: #484c55; }
 
-.fishing {
+.gallery__fishing {
   text-align: center; }
-  .fishing p {
+  .gallery__fishing p {
     font-family: "Parisienne", cursive;
-    font-size: 8vw;
+    font-size: 9.5vw;
     color: black;
     text-align: center;
     margin-bottom: 0; }
-  .fishing .amazon__button {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95 */
-    background: #ffb3a1;
-    /* Old browsers */
-    background: -moz-linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#de6869',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */
-    /*
-    // Needs latest Compass, add '@import "compass"' to your scss
-    // Permalink - use to edit and share this gradient:
-    // http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95
-    background-color: #ffb3a1; // Old browsers
-    @include filter-gradient(#ffb3a1, #de6869, horizontal); // IE6-9 fallback on horizontal gradient
-    @include background-image(linear-gradient(left bottom, #ffb3a1 11%,#de6869 30%,#ffb3a1 67%,#de6869 95%));
-    */
-    font-family: "Playfair Display", serif;
-    font-size: 6vw;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 900;
-    letter-spacing: 1vw;
-    border-radius: 25px; }
-  .fishing i {
-    display: block;
-    font-family: "Playfair Display", serif;
-    font-size: 3vw;
-    font-style: italic;
-    letter-spacing: .1vw; }
+    @media (min-width: 480px) {
+      .gallery__fishing p {
+        font-size: 7vw; } }
+    @media (min-width: 720px) {
+      .gallery__fishing p {
+        font-size: 6vw; } }
 
-.modal-footer__content {
-  color: black;
+.amazon__button {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95 */
+  background: #ffb3a1;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ffb3a1 11%, #de6869 30%, #ffb3a1 67%, #de6869 95%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3a1', endColorstr='#de6869',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  /*
+  // Needs latest Compass, add '@import "compass"' to your scss
+  // Permalink - use to edit and share this gradient:
+  // http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95
+  background-color: #ffb3a1; // Old browsers
+  @include filter-gradient(#ffb3a1, #de6869, horizontal); // IE6-9 fallback on horizontal gradient
+  @include background-image(linear-gradient(left bottom, #ffb3a1 11%,#de6869 30%,#ffb3a1 67%,#de6869 95%));
+  */
+  font-family: "Playfair Display", serif;
+  font-size: 6vw;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1vw;
+  border-radius: 25px; }
+  @media (min-width: 480px) {
+    .amazon__button {
+      font-size: 4.5vw;
+      letter-spacing: .5vw; } }
+  @media (min-width: 720px) {
+    .amazon__button {
+      font-size: 3vw;
+      letter-spacing: .5vw; } }
+
+i {
+  display: block;
   font-family: "Playfair Display", serif;
   font-size: 3vw;
+  font-style: italic;
+  letter-spacing: .1vw; }
+  @media (min-width: 480px) {
+    i {
+      font-size: 2.2vw; } }
+  @media (min-width: 720px) {
+    i {
+      font-size: 1.5vw; } }
+
+.gallery__modal-footer__content {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-size: 11px;
   margin-bottom: 0; }
-  .modal-footer__content a {
+  .gallery__modal-footer__content a {
     color: blue;
     text-decoration: underline; }
-  .modal-footer__content span {
+  .gallery__modal-footer__content span {
     font-style: italic; }
 
 .amazon__title {
   position: relative;
   width: 100%;
-  color: #ffb3a1;
+  color: black;
+  text-shadow: 4px 3px 3px #484c55;
+  background: #ffb3a133;
   font-family: "Playfair Display", serif;
-  font-size: 24vw;
+  font-size: 22vw;
   font-weight: 700;
-  letter-spacing: -2vw;
   text-align: center; }
+  @media (min-width: 720px) {
+    .amazon__title {
+      font-size: 18vw;
+      text-shadow: 7px 5px 4px #484c55; } }
 
 .amazon__exclusive {
   position: absolute;
@@ -332,19 +499,24 @@ p {
   font-weight: 400;
   background: white;
   color: black;
-  padding-bottom: .5vw; }
+  padding-bottom: .5vw;
+  text-shadow: 0 0 0 white; }
 
 .amazon__content {
   font-family: "Playfair Display", serif;
   font-size: 2.2vw;
   color: #000;
   background: white;
-  line-height: 3vw;
+  line-height: 4vw;
   letter-spacing: .1vw;
   text-transform: uppercase;
   padding: 0;
-  margin-bottom: 5vw;
+  margin: 1vw 0;
   text-align: center; }
+  @media (min-width: 720px) {
+    .amazon__content {
+      font-size: 1.8vw;
+      line-height: 3.2vw; } }
 
 .subline-verse {
   width: 10vw;
@@ -360,7 +532,16 @@ p {
   color: #26272a;
   font-size: 2.8vw;
   letter-spacing: 0.15vw;
-  line-height: 4vw; }
+  line-height: 4vw;
+  margin-bottom: 0; }
+  @media (min-width: 480px) {
+    .dorotea__mobile-verse {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      color: #26272a;
+      font-size: 2vw;
+      letter-spacing: 0.15vw;
+      line-height: 3vw; } }
 
 .dorotea__mobile-content {
   font-family: "Playfair Display", serif;
@@ -370,14 +551,23 @@ p {
   line-height: 5vw; }
   .dorotea__mobile-content::first-letter {
     font-family: "Parisienne", cursive;
-    font-size: 14vw;
+    font-size: 12vw;
     letter-spacing: -0.5vw; }
+  @media (min-width: 480px) {
+    .dorotea__mobile-content {
+      font-family: "Playfair Display", serif;
+      color: #484c55;
+      font-size: 2.3vw;
+      letter-spacing: 0.1vw;
+      line-height: 4vw; }
+      .dorotea__mobile-content::first-letter {
+        font-family: "Parisienne", cursive;
+        font-size: 10vw;
+        letter-spacing: -0.5vw; } }
 
 .header__img-back-container {
   position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100vw; }
+  width: 100%; }
 
 .header__title-container {
   position: absolute;
@@ -394,18 +584,33 @@ p {
   bottom: 0;
   left: 10%; }
 
-#modal__collage .modal-body {
+#modal__collage .phh__modal-body {
   padding: 1vw; }
+#modal__collage .phh__modal-content {
+  width: auto; }
+#modal__collage .phh__justify-content {
+  justify-content: center; }
+
+.img--modal {
+  max-width: 300px;
+  max-height: 90vh;
+  margin: auto; }
+  @media (min-width: 480px) {
+    .img--modal {
+      max-width: 400px; } }
+  @media (min-width: 1248px) {
+    .img--modal {
+      max-width: 480px; } }
 
 .modal__collage--close {
   position: absolute;
   z-index: 10000;
   right: 0;
   color: #da2828;
-  font-size: 8vw;
-  opacity: .8;
+  font-size: 24px;
+  opacity: .9;
   text-shadow: 2px 0px 1px #000000;
-  margin: 1vw 3vw; }
+  margin-right: 1.3vw; }
 
 .nature__image-container {
   display: block;
@@ -430,64 +635,115 @@ p {
   width: 100%;
   height: 100%; }
 
+.nature__content-container {
+  display: block;
+  position: absolute;
+  top: 100%; }
+  @media (min-width: 480px) {
+    .nature__content-container {
+      position: relative;
+      top: 0; } }
+
 .gallery__list-pieces {
   display: flex;
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  flex: 1 50%;
+  flex: 1 1 100%;
   list-style: none;
   padding: 0; }
+  .gallery__list-pieces .container-img {
+    position: relative; }
+    .gallery__list-pieces .container-img .piece__title {
+      position: absolute;
+      top: 10%; }
+      @media (min-width: 321px) {
+        .gallery__list-pieces .container-img .piece__title {
+          top: 0; } }
+  @media (max-width: 480px) {
+    .gallery__list-pieces {
+      flex: 1 1 50%; } }
+  @media (max-width: 1248px) {
+    .gallery__list-pieces {
+      flex: 1 1 33%; } }
 
-.modal-header {
-  padding: 3vw 6vw 0;
+.gallery__modal-header {
+  padding: 4vw 6vw;
   position: relative;
-  border: none; }
-  .modal-header .piece__title {
-    width: 92%;
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size: 6vw;
-    margin-bottom: 0;
-    color: #484c55; }
-    .modal-header .piece__title .first {
-      font-size: 9vw;
-      margin: -2.5vw;
-      color: #ffb3a1; }
+  box-shadow: 0px 2px 2px #f4f4f4; }
+  .gallery__modal-header .piece__title {
+    margin-bottom: 0; }
+    .gallery__modal-header .piece__title .first {
+      display: inline-block; }
+  @media (min-width: 720px) {
+    .gallery__modal-header {
+      display: none; } }
 
-.gallery .carousel {
+.gallery__modal-dialog {
+  max-width: 350px;
+  margin: auto; }
+  @media (min-width: 480px) {
+    .gallery__modal-dialog {
+      max-width: 400px; } }
+  @media (min-width: 720px) {
+    .gallery__modal-dialog {
+      max-width: 700px; } }
+
+.gallery__modal-body {
+  padding: 2vw; }
+  @media (min-width: 720px) {
+    .gallery__modal-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      flex: 1 auto; }
+      .gallery__modal-body .gallery__carousel {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .gallery__modal-body .gallery__modal-body__content--container {
+        width: 50%;
+        padding: 2vw;
+        position: relative; } }
+  .gallery__modal-body .gallery__carousel-indicators .indicator {
+    background-color: #ffb3a1 !important;
+    height: 12px;
+    border-radius: 6px;
+    width: 12px; }
+  .gallery__modal-body .gallery__carousel-indicators li.active {
+    border: 3px solid white !important;
+    background-color: black; }
+  .gallery__modal-body .gallery__carousel-item--caption {
+    padding-top: 24px; }
+  .gallery__modal-body .gallery__carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 6px 0 0; }
+    .gallery__modal-body .gallery__carousel-caption h5 {
+      color: #484c55; }
+  .gallery__modal-body .pieces16-list {
+    list-style: circle;
+    padding: 5vw 6vw 0; }
+
+.gallery__carousel {
   padding-bottom: 5vw; }
 
-.modal-body .img {
-  width: auto;
-  margin: auto; }
-.modal-body .phh__carousel-indicators {
-  bottom: 0; }
-  .modal-body .phh__carousel-indicators .indicator {
-    background-color: #ffb3a1 !important;
-    height: 1.5vh;
-    border-radius: 5px;
-    width: 9px; }
-  .modal-body .phh__carousel-indicators li.active {
-    border: 1.5px solid white !important;
-    background-color: black; }
-.modal-body .carousel-item--caption {
-  padding-bottom: 10vw; }
-.modal-body .carousel-caption {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%; }
-  .modal-body .carousel-caption h5 {
-    color: #484c55; }
-.modal-body .pieces16-list {
-  list-style: circle;
-  padding: 5vw 6vw 0; }
+.gallery__modal-header--inserted {
+  display: none; }
+  @media (min-width: 720px) {
+    .gallery__modal-header--inserted {
+      display: block; }
+      .gallery__modal-header--inserted .first {
+        display: inline-block;
+        margin-left: -2vw; } }
 
-.modal-footer {
-  background: rgba(0, 0, 0, 0.08);
-  padding: 3.5vw; }
+.gallery__modal-footer {
+  background: rgba(0, 0, 0, 0.08); }
 
 .header {
   margin-bottom: 15vw; }
@@ -600,7 +856,11 @@ p {
   width: 100%;
   margin: 0;
   margin-bottom: 15vw;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 95px; }
+  @media (min-width: 480px) {
+    .nature {
+      padding: 0; } }
 
 .texture {
   margin-bottom: 15vw; }
@@ -621,7 +881,7 @@ p {
   padding-right: 0;
   margin-bottom: 15vw;
   background-color: white;
-  border: 1vw #ffb3a1 solid;
+  border: 1px #ffb3a133 solid;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+0,de6868+40,ffb3a1+85 */
   /*background: #ffb3a1; /* Old browsers */
   /*background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%); /* FF3.6-15 */

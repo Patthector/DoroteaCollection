@@ -1,12 +1,35 @@
 
 .piece{
-  padding:2vw 1vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  //justify-content: center;
+  align-items: center;
+  padding:2vw 2vw 0;
   position: relative;
-  width: 50%;
-  margin-top: 6vw;
+  //margin-top: 6vw;
+  //border-bottom: .5px solid $color-primary;
   img{
     width: 100%;
     display: block;
     margin: auto;
+    &.plate{
+    //width: 80%;
+    }
+  }
+  @media(max-width:map-get($breakpoints,xlarge)){//change!
+    width:33%;
+  }
+  @media(max-width:map-get($breakpoints,md)){
+    width:50%;
+  }
+  @media(max-width:320px){
+    width:100%;
+  }
+}
+.piece__offer{
+  order:1;
+  @media(min-width: 321px){
+    order:0;
   }
 }

@@ -2,10 +2,15 @@
 .amazon__title{
   position: relative;
   width: 100%;
-  color: $color-primary;
+  color: black;
+  text-shadow: 4px 3px 3px $color-text-weak;
+  background: #ffb3a133;
   font-family: "Playfair Display", serif;
-  font-size: 24vw;
-  font-weight: 700;
-  letter-spacing: -2vw;
+  font-size: 22vw;
+  font-weight: $bold;
   text-align: center;
+  @media(min-width: map-get($breakpoints,mmd)){
+      font-size: 18vw;
+      text-shadow: 7px 5px 4px $color-text-weak;
+  }
 }

@@ -3,4 +3,8 @@
   &::first-letter{
     color: $color-primary !important;
   }
+
+  @media(min-width: map-get($breakpoints,small)){
+    color:white !important;
+  }
 }
