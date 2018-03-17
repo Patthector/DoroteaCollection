@@ -26,17 +26,38 @@
     }
   }
   @media(min-width:map-get($breakpoints,small)){
-    font-size: 3.5vw;
-    line-height: 3.5vw;
-    .first{
-      font-size:7vw;
-    }
-  }
-  @media(min-width:map-get($breakpoints,mmd)){
     font-size: 3vw;
     line-height: 3vw;
     .first{
       font-size:6vw;
+    }
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 2.8vw;
+    line-height: 3vw;
+    .first{
+      font-size:5vw;
+    }
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 1.8vw;
+    line-height: 2vw;
+    .first{
+      font-size:3.5vw;
+    }
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    /*font-size: 1.8vw;
+    line-height: 2vw;
+    .first{
+      font-size:3.5vw;
+    }*/
+  }
+  @media(min-width:map-get($breakpoints,xlarge)){
+    font-size: 1.8vw;
+    line-height: 2vw;
+    .first{
+      font-size:3.5vw;
     }
   }
 }
@@ -46,14 +67,24 @@
   text-align: center;
   margin-top: 8vw;
   @media(min-width:321px){
-    font-size: 4.5vw;
+    font-size: 4vw;
     margin-top: 0;
-    line-height: 4vw;
+    line-height: 3.5vw;
   }
-  @media(min-width:321px){
-    font-size: 4.5vw;
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 2.5vw;
     margin-top: 0;
-    line-height: 4vw;
+    line-height: 2.8vw;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 2.5vw;
+    margin-top: 0;
+    line-height: 2vw;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size: 2.2vw;
+    margin-top: 0;
+    line-height: 1.8vw;
   }
   .number{
     display: inline-block;
@@ -61,7 +92,16 @@
     color:$color-primary;
     font-size:20vw;
     @media(min-width:321px){
-      font-size:12vw;
+      font-size:9vw;
+    }
+    @media(min-width:map-get($breakpoints,mmd)){
+      font-size:7.5vw;
+    }
+    @media(min-width:map-get($breakpoints,md)){
+      font-size:7vw;
+    }
+    @media(min-width:map-get($breakpoints,large)){
+      font-size:4.4vw;
     }
     font-weight: $regular;
   }
@@ -71,33 +111,48 @@
     font-size:10vw;
     font-weight: $regular;
     @media(min-width:321px){
-      font-size:7vw;
+      font-size:5vw;
+    }
+    @media(min-width:map-get($breakpoints,mmd)){
+      font-size:4vw;
+    }
+    @media(min-width:map-get($breakpoints,md)){
+      font-size:3.8vw;
+    }
+    @media(min-width:map-get($breakpoints,large)){
+      font-size:3vw;
     }
   }
 }
 
 .piece__title--subtitle{
-  font-size:4.5vw;
+  font-size: 14px;
   .first{
-    font-size:8vw;
+    font-size:28px;
     display: inline-block;
   }
-  @media(min-width:321px){
-    font-size:3.5vw;
-    .first{
-      font-size:7vw;
-    }
-  }
   @media(min-width:map-get($breakpoints,small)){
-    font-size: 2.8vw;
+    font-size: 14px;
     .first{
-      font-size:5.5vw;
+      font-size:28px;
     }
   }
   @media(min-width:map-get($breakpoints,mmd)){
-    font-size: 2vw;
+    font-size: 14px;
     .first{
-      font-size:4vw;
+      font-size:30px;
+    }
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 14px;
+    .first{
+      font-size:30px;
+    }
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size: 18px;
+    .first{
+      font-size:36px;
     }
   }
 }

@@ -3,9 +3,11 @@
   display: none;
   @media(min-width: map-get($breakpoints,mmd)){
     display: block;
-    .first{
-      display: inline-block;
-      margin-left: -2vw;
-    }
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    display: block;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    display: block;
   }
 }

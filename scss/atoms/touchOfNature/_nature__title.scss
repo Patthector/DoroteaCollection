@@ -15,4 +15,43 @@
     font-size: 12vw;
     font-family: $cursive-ff;
   }
+  @media(min-width: map-get($breakpoints,mmd)){
+    font-size: 6vw;
+    .middle{
+      font-size: 11vw;
+    }
+    .last{
+      font-size: 11vw;
+    }
+  }
+  @media(min-width: map-get($breakpoints,md)){
+
+    font-size: 10vw;
+    .middle{
+      font-size: 6vw;
+    }
+    .last{
+      font-size: 12vw;
+    }
+  }
+  @media(min-width: map-get($breakpoints,large)){
+
+    /*font-size: 10vw;
+    .middle{
+      font-size: 6vw;
+    }
+    .last{
+      font-size: 12vw;
+    }*/
+  }
+  @media(min-width: map-get($breakpoints,xlarge)){
+
+    font-size: 6vw;
+    .middle{
+      font-size: 11vw;
+    }
+    .last{
+      font-size: 11vw;
+    }
+  }
 }

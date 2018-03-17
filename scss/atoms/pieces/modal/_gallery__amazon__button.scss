@@ -13,6 +13,12 @@
     @media(min-width:map-get($breakpoints,mmd)){
       font-size: 6vw;
     }
+    @media(min-width:map-get($breakpoints,md)){
+      font-size: 3.8vw;
+    }
+    @media(min-width:map-get($breakpoints,large)){
+      font-size: 3vw;
+    }
   }
 }
 .amazon__button{
@@ -45,6 +51,14 @@ background-color: #ffb3a1; // Old browsers
     font-size: 3vw;
     letter-spacing: .5vw;
   }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
 }
 i{
   display: block;
@@ -57,5 +71,11 @@ i{
   }
   @media(min-width:map-get($breakpoints,mmd)){
     font-size: 1.5vw;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 11px;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size: 12px;
   }
 }

@@ -4,10 +4,22 @@
   position: relative;
   width: 100%;
   margin: 0;
-  margin-bottom: 15vw;
   padding: 0;
   padding-bottom: 95px;//just for screen less than 480px
-  
+  margin-bottom: 24px;
+  @media(min-width: map-get($breakpoints,small)){
+    margin-bottom: 36px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    margin-bottom: 48px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    margin-bottom: 60px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    margin-bottom: 72px;
+  }
+
   @media(min-width: map-get($breakpoints,small)){
     padding: 0;
   }

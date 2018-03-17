@@ -1,12 +1,12 @@
 
 .gallery__line{
-  //display: block;
-  width: 80%;
-  background: $color-primary;
+  width: 100%;
+  background: #f1f1f1;
   height: 1px;
   border: 0;
-  margin-top: 1vw;
-  margin-bottom:4vw;
+  margin-top: 6px;
+  margin-bottom:24px;
+  box-shadow: 0px 1px 2px #efefef;
 }
 
 @media(max-width: 320px){
@@ -23,10 +23,25 @@
   }
 }
 @media(min-width: map-get($breakpoints,md)){
+  .l-2{
+    display: none;
+  }
   .l-3{
     display: block;
   }
-  .l-2{
+  .gallery__line{
+    width: 100%;
+  }
+}
+@media(min-width: map-get($breakpoints,large)){
+  .l-1, .l-2, .l-3{
     display: none;
+  }
+  .l-4{
+    display: block;
+  }
+  .gallery__line{
+    margin:6px 0 0;
+    width: 100%;
   }
 }

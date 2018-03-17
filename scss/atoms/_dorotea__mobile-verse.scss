@@ -1,10 +1,41 @@
 
 .dorotea__mobile-verse{
   //MOBILE less than 480px
-  @include dorotea__verse(2.8vw, .15vw, 4vw);
+  @include dorotea__verse(2.5vw, .2vw, 4vw);
   margin-bottom: 0;
+  &--grid{
+    padding: 0 12px;
+  }
   //TABLET SCREEN or BIG MOBILES
     @media(min-width:map-get($breakpoints,small)){
         @include dorotea__verse(2vw, .15vw, 3vw);
     }
+  //LAPTOPS or BIG TABLET
+    @media(min-width:map-get($breakpoints,mmd)){
+      @include dorotea__verse(
+              1.8vw,
+              .1vw,
+              3vw);
+    }
+  //BIG LAPTOPS
+    @media(min-width:map-get($breakpoints,md)){
+      @include dorotea__verse(
+              1.4vw,
+              .1vw,
+              2.4vw);
+    }
+  //DESKTOPS
+    @media(min-width:map-get($breakpoints,large)){
+      @include dorotea__verse(
+              1.3vw,
+              .1vw,
+              2vw);
+    }
+    //BIG DESKTOPS
+      @media(min-width:map-get($breakpoints,xlarge)){
+        @include dorotea__verse(
+              8vw,
+                .1vw,
+                1.8vw);
+      }
 }

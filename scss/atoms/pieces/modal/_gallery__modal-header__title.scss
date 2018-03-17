@@ -1,24 +1,17 @@
 
 .gallery__modal-header__title{
-  font-size: 6vw;
-  letter-spacing: -.2vw;
+  font-size: 20px;
   .first{
-    display: none;
-    font-size:9.5vw;
-    margin-left: -2vw;
+    display: inline-block;
+    font-size: 36px;
+    margin-left: -4px;
   }
   @media(min-width:map-get($breakpoints,small)){
-    font-size: 5vw;
-    letter-spacing: .01vw;
+    font-size: 24px;
     .first{
-      font-size:7.5vw;
-    }
-  }
-  @media(min-width:map-get($breakpoints,mmd)){
-    font-size: 3.5vw;
-    letter-spacing: .1vw;
-    .first{
-      font-size:7vw;
+      display: inline-block;
+      font-size: 48px;
+      margin-left: -6px;
     }
   }
 }

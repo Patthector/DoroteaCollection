@@ -3,14 +3,26 @@
   position: relative;
   width: 100%;
   color: black;
-  text-shadow: 4px 3px 3px $color-text-weak;
+  //text-shadow: 4px 3px 3px $color-text-weak;
   background: #ffb3a133;
   font-family: "Playfair Display", serif;
-  font-size: 22vw;
+  font-size: 60px;
   font-weight: $bold;
   text-align: center;
+  @media(min-width: map-get($breakpoints,small)){
+      font-size: 96px;
+      //text-shadow: 7px 5px 4px $color-text-weak;
+  }
   @media(min-width: map-get($breakpoints,mmd)){
-      font-size: 18vw;
-      text-shadow: 7px 5px 4px $color-text-weak;
+      font-size: 72px;
+      //text-shadow: 7px 5px 4px $color-text-weak;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+      font-size: 84px;
+      //text-shadow: 7px 5px 4px $color-text-weak;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+      font-size: 180px;
+      //text-shadow: 7px 5px 4px $color-text-weak;
   }
 }

@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(window).ready(function() {
   console.log("hellos");
   //Min_height_piece();
-
+  CreatingTheGrid();
 
   //
   //THE GRID
@@ -9,18 +9,49 @@ $(document).ready(function() {
   function CreatingTheGrid(){
     let grid = $("#grid__collage");
     let children = grid.children();
-    for (let i = 0; i < children.length; i++) {
-      ///SETTING THE HEIGHTS OF ALL THE CARDS
-      //BuildingCard(children.eq(i));//get just the article
-      var height = children.eq(i).height();
-      //console.log(height,height);
-      let repetitions = Math.ceil(height / 10);/*10px*/
-      //console.log(repetitions,height);
+    var height = 0;
+    for (let i = 0; i < 6; i++) {/*just the first five elements*/
+      ///SETTING THE HEIGHTS OF ALL THE IMGS
+      height = 0;
+      if(children.eq(i).hasClass('collage__title-container') || children.eq(i).hasClass('collage__content-container')){
+        height = children.eq(i).children().eq(0).height() + 20; /*+20px's*/
+        height += 4; /*margin*/
+      }
+      else if(children.eq(i).hasClass('collage__verse-container')){
+        height = children.eq(i).children().eq(1).height();
+        height += children.eq(i).children().eq(0).height() * 2 + 32 * 2; /*top-line and bottom-line && margins*/
+        height += 4; /*margin*/
+      }
+      else{
+        height = children.eq(i).children().eq(0).height() + 4;/*img*//*margin*/
+        console.log(children.eq(i).children().eq(0).height());
+      }
+
+      let repetitions = Math.ceil(height / 1);/*10px*/
       children.eq(i).css(`grid-row-end`,`span ${repetitions}`);
+      if(children.eq(i).hasClass('square')){
+        $('.square').css(`grid-row-end`,`span ${repetitions}`);
+      }
+      else if(children.eq(i).hasClass('hrect')){
+        $('.hrect').css(`grid-row-end`,`span ${repetitions}`);/*horizontal rectangle*/
+      }
+      else if(children.eq(i).hasClass('vrect')){
+        $('.vrect').css(`grid-row-end`,`span ${repetitions}`);/*horizontal rectangle*/
+      }
     }
   }
+
+  $("#grid__collage").on('click',function(e){
+    if(e.target.tagName === "IMG"){
+      let pic__id = parseInt(e.target.id.slice(-1));
+      $("#modal__collage .carousel-indicators li.active").toggleClass( "active" );
+      $("#modal__collage .carousel-indicators li").eq(pic__id).toggleClass( "active" );
+      $("#modal__collage .carousel-inner .carousel-item.active").toggleClass( "active" );
+      $("#modal__collage .carousel-inner").children().eq(pic__id).toggleClass( "active" );
+    }
+  });
   //Finding the min-heigh of pieces
-  function Min_height_piece(){
+/*  function Min_height_piece(){
     let piece__plate = $("#plate");
     let piece__mug = $("#mug");
     let piece = $(".piece .container-img");
@@ -28,16 +59,15 @@ $(document).ready(function() {
     console.log(height,height);
     piece.css('min-height',height);
     height = piece__plate.height();
-    console.log(height,height);
     piece.css('max-height',height);
     let piece__offer = $(".piece__offer");
     piece__offer.css('min-height',height);
-  }
-  /*
+  }*/
+
   $(window).on('load',function(){
     console.log("LOADING");
     CreatingTheGrid();
-  })
+  });
   $(window).on('resize',function(){
     console.log("RESIZING");
     let main_display = $("main").css("display");
@@ -48,7 +78,7 @@ $(document).ready(function() {
       $("#nav").css("display","none");
     }
     CreatingTheGrid();
-  })
+  });
   $(window).on('orientationchange',function(){
     console.log("ORIENTATIONCHANGE");
     let main_display = $("main").css("display");
@@ -59,13 +89,11 @@ $(document).ready(function() {
       $("#nav").css("display","none");
     }
     CreatingTheGrid();
-  })
-  */
-CreatingTheGrid();
+  });
 
 //CAROUSEL-SWIPE
   $(".carousel").carousel({
-  swipe: 30 // percent-per-second, default is 50. Pass false to disable swipe
+  swipe: 50 // percent-per-second, default is 50. Pass false to disable swipe
   });
 
 });

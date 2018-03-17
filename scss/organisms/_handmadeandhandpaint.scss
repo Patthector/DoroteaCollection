@@ -1,6 +1,19 @@
 
 .handmadeandhandpaint{
-  margin-bottom: 15vw;
+  //margin-bottom: 15vw;
+  margin-bottom: 24px;
+  @media(min-width: map-get($breakpoints,small)){
+    margin-bottom: 36px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    margin-bottom: 48px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    margin-bottom: 60px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    margin-bottom: 72px;
+  }
 }
 //ORGANISMS
 //**collage made with the grid approach
@@ -8,37 +21,26 @@
 .collage-sm{
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-auto-rows: minmax(10px,auto);
+  grid-auto-rows: minmax(1px,auto); 
+  //grid-auto-rows: auto;
   grid-auto-flow: dense;
   //MOBILE-DESIGN
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 10vw;
+
   //
   div{
-    padding: 2.5%;
-    img{
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+    margin: 2px;
   }
 }
-.block-blank{
-  grid-column-end: span 1;
-  //grid-row-end:span 3;
+.img--collage{
+  height: 100%;
 }
-.grid-sm-7{
-  grid-column-end: span 7;
-}
-.grid-sm-6{
-  grid-column-end: span 6;
-}
+/****/
+//GRID-COLUMN
+
 .grid-sm-4{
   grid-column-end: span 4;
-}
-.grid-sm-3{
-  grid-column-end: span 3;
 }
 .grid-sm-8{
   grid-column-end: span 8;
@@ -46,22 +48,34 @@
 .grid-sm-12{
   grid-column-end: span 12;
 }
+@media(min-width:map-get($breakpoints,mmd)){
+  .grid-mmd-6{
+    grid-column-end: span 8;
+  }
+}
 
-.grid-r-sm-2{
-  grid-row-end:span 2;
+@media(min-width:map-get($breakpoints,md)){
+  .grid-md-7{
+    grid-column-end: span 7;
+  }
+  .grid-md-6{
+    grid-column-end: span 6;
+  }
+  .grid-md-4{
+    grid-column-end: span 4;
+  }
+  .grid-md-3{
+    grid-column-end: span 3;
+  }
+  .grid-md-8{
+    grid-column-end: span 8;
+  }
+  .grid-md-12{
+    grid-column-end: span 12;
+  }
 }
-.grid-r-sm-3{
-  grid-row-end:span 3;
-}
-.grid-r-sm-4{
-  grid-row-end:span 4;
-}
-.grid-r-sm-5{
-  grid-row-end:span 5;
-}
-.grid-r-sm-7{
-  grid-row-end:span 7;
-}
+/****/
+//ORDER
 .grid-order-sm-1{
   order:1;
 }

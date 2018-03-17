@@ -94,6 +94,7 @@ p{
 
 .handmadeAndHandpaint_title {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   line-height: 6vw;
   text-align: center; }
@@ -114,6 +115,34 @@ p{
     font-family: "Parisienne", cursive;
     font-size: 12vw;
     color: #ffb3a1; }
+  @media (min-width: 720px) {
+    .handmadeAndHandpaint_title .first {
+      font-size: 6vw; }
+    .handmadeAndHandpaint_title .middle {
+      font-size: 11vw; }
+    .handmadeAndHandpaint_title .last {
+      font-size: 11vw; } }
+  @media (min-width: 900px) {
+    .handmadeAndHandpaint_title .first {
+      font-size: 6vw; }
+    .handmadeAndHandpaint_title .middle {
+      font-size: 11vw; }
+    .handmadeAndHandpaint_title .last {
+      font-size: 11vw; } }
+  @media (min-width: 1248px) {
+    .handmadeAndHandpaint_title .first {
+      font-size: 5.5vw; }
+    .handmadeAndHandpaint_title .middle {
+      font-size: 9vw; }
+    .handmadeAndHandpaint_title .last {
+      font-size: 9vw; } }
+  @media (min-width: 1500px) {
+    .handmadeAndHandpaint_title .first {
+      font-size: 6vw; }
+    .handmadeAndHandpaint_title .middle {
+      font-size: 11vw; }
+    .handmadeAndHandpaint_title .last {
+      font-size: 11vw; } }
 
 .nature__title {
   font-family: "Playfair Display", serif;
@@ -129,15 +158,52 @@ p{
   .nature__title .last {
     font-size: 12vw;
     font-family: "Parisienne", cursive; }
-
-.dorotea__verse--color {
-  color: white !important; }
+  @media (min-width: 720px) {
+    .nature__title {
+      font-size: 6vw; }
+      .nature__title .middle {
+        font-size: 11vw; }
+      .nature__title .last {
+        font-size: 11vw; } }
+  @media (min-width: 900px) {
+    .nature__title {
+      font-size: 10vw; }
+      .nature__title .middle {
+        font-size: 6vw; }
+      .nature__title .last {
+        font-size: 12vw; } }
+  @media (min-width: 1248px) {
+    .nature__title {
+      /*font-size: 10vw;
+      .middle{
+        font-size: 6vw;
+      }
+      .last{
+        font-size: 12vw;
+      }*/ } }
+  @media (min-width: 1500px) {
+    .nature__title {
+      font-size: 6vw; }
+      .nature__title .middle {
+        font-size: 11vw; }
+      .nature__title .last {
+        font-size: 11vw; } }
 
 .dorotea__mobile-content--color::first-letter {
   color: #ffb3a1 !important; }
 @media (min-width: 480px) {
   .dorotea__mobile-content--color {
     color: white !important; } }
+
+.nature__verse {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center; }
+
+.dorotea__verse--color {
+  color: white !important; }
 
 .texture__title {
   display: block;
@@ -174,6 +240,54 @@ p{
       letter-spacing: -.7vw; }
     .texture__title .last {
       font-size: 12vw; } }
+@media (min-width: 720px) {
+  .texture__title {
+    line-height: 6vw;
+    word-spacing: -1vw; }
+    .texture__title .first {
+      font-size: 11vw;
+      letter-spacing: -.5vw; }
+    .texture__title .middle {
+      font-size: 8vw;
+      letter-spacing: -.7vw; }
+    .texture__title .last {
+      font-size: 12vw; } }
+@media (min-width: 900px) {
+  .texture__title {
+    line-height: 5vw;
+    word-spacing: -1vw; }
+    .texture__title .first {
+      font-size: 9vw;
+      letter-spacing: -.5vw; }
+    .texture__title .middle {
+      font-size: 6vw;
+      letter-spacing: -.7vw; }
+    .texture__title .last {
+      font-size: 9vw; } }
+@media (min-width: 1248px) {
+  .texture__title {
+    line-height: 5vw;
+    word-spacing: -1vw; }
+    .texture__title .first {
+      font-size: 9vw;
+      letter-spacing: -.5vw; }
+    .texture__title .middle {
+      font-size: 5vw;
+      letter-spacing: -.7vw; }
+    .texture__title .last {
+      font-size: 9vw; } }
+@media (min-width: 1500px) {
+  .texture__title {
+    line-height: 6vw;
+    word-spacing: -1vw; }
+    .texture__title .first {
+      font-size: 11vw;
+      letter-spacing: -.5vw; }
+    .texture__title .middle {
+      font-size: 8vw;
+      letter-spacing: -.7vw; }
+    .texture__title .last {
+      font-size: 12vw; } }
 .piece {
   display: flex;
   flex-direction: column;
@@ -185,7 +299,10 @@ p{
     width: 100%;
     display: block;
     margin: auto; }
-  @media (max-width: 1500px) {
+  @media (min-width: 1248px) {
+    .piece {
+      width: 25%; } }
+  @media (max-width: 1248px) {
     .piece {
       width: 33%; } }
   @media (max-width: 900px) {
@@ -194,12 +311,6 @@ p{
   @media (max-width: 320px) {
     .piece {
       width: 100%; } }
-
-.piece__offer {
-  order: 1; }
-  @media (min-width: 321px) {
-    .piece__offer {
-      order: 0; } }
 
 .pieces__title {
   color: #26272a;
@@ -230,6 +341,52 @@ p{
         font-size: 13vw; }
       .pieces__title .last {
         font-size: 11vw; } }
+  @media (min-width: 720px) {
+    .pieces__title .texture__title {
+      line-height: 6vw;
+      word-spacing: -1vw; }
+      .pieces__title .texture__title .first {
+        font-size: 11vw;
+        letter-spacing: -.5vw; }
+      .pieces__title .texture__title .middle {
+        font-size: 8vw;
+        letter-spacing: -.7vw; }
+      .pieces__title .texture__title .last {
+        font-size: 12vw; } }
+  @media (min-width: 900px) {
+    .pieces__title {
+      font-size: 7vw;
+      line-height: 5vw; }
+      .pieces__title .first {
+        display: block;
+        font-size: 7vw; }
+      .pieces__title .last {
+        display: block;
+        font-size: 9vw; } }
+  @media (min-width: 1248px) {
+    .pieces__title {
+      /*font-size: 7vw;
+      line-height: 5vw;
+      .first{
+        display: block;
+        font-size:7vw;
+      }
+      .last{
+        display: block;
+        font-size:9vw;
+      }*/ } }
+  @media (min-width: 1500px) {
+    .pieces__title .texture__title {
+      line-height: 6vw;
+      word-spacing: -1vw; }
+      .pieces__title .texture__title .first {
+        font-size: 11vw;
+        letter-spacing: -.5vw; }
+      .pieces__title .texture__title .middle {
+        font-size: 8vw;
+        letter-spacing: -.7vw; }
+      .pieces__title .texture__title .last {
+        font-size: 12vw; } }
 
 .piece__title {
   width: 100%;
@@ -256,16 +413,35 @@ p{
         font-size: 7.5vw; } }
   @media (min-width: 480px) {
     .piece__title {
-      font-size: 3.5vw;
-      line-height: 3.5vw; }
-      .piece__title .first {
-        font-size: 7vw; } }
-  @media (min-width: 720px) {
-    .piece__title {
       font-size: 3vw;
       line-height: 3vw; }
       .piece__title .first {
         font-size: 6vw; } }
+  @media (min-width: 720px) {
+    .piece__title {
+      font-size: 2.8vw;
+      line-height: 3vw; }
+      .piece__title .first {
+        font-size: 5vw; } }
+  @media (min-width: 900px) {
+    .piece__title {
+      font-size: 1.8vw;
+      line-height: 2vw; }
+      .piece__title .first {
+        font-size: 3.5vw; } }
+  @media (min-width: 1248px) {
+    .piece__title {
+      /*font-size: 1.8vw;
+      line-height: 2vw;
+      .first{
+        font-size:3.5vw;
+      }*/ } }
+  @media (min-width: 1500px) {
+    .piece__title {
+      font-size: 1.8vw;
+      line-height: 2vw; }
+      .piece__title .first {
+        font-size: 3.5vw; } }
 
 .piece__offer .piece__title {
   width: 100%;
@@ -274,14 +450,24 @@ p{
   margin-top: 8vw; }
   @media (min-width: 321px) {
     .piece__offer .piece__title {
-      font-size: 4.5vw;
+      font-size: 4vw;
       margin-top: 0;
-      line-height: 4vw; } }
-  @media (min-width: 321px) {
+      line-height: 3.5vw; } }
+  @media (min-width: 720px) {
     .piece__offer .piece__title {
-      font-size: 4.5vw;
+      font-size: 2.5vw;
       margin-top: 0;
-      line-height: 4vw; } }
+      line-height: 2.8vw; } }
+  @media (min-width: 900px) {
+    .piece__offer .piece__title {
+      font-size: 2.5vw;
+      margin-top: 0;
+      line-height: 2vw; } }
+  @media (min-width: 1248px) {
+    .piece__offer .piece__title {
+      font-size: 2.2vw;
+      margin-top: 0;
+      line-height: 1.8vw; } }
   .piece__offer .piece__title .number {
     display: inline-block;
     font-family: "Parisienne", cursive;
@@ -290,7 +476,16 @@ p{
     font-weight: 400; }
     @media (min-width: 321px) {
       .piece__offer .piece__title .number {
-        font-size: 12vw; } }
+        font-size: 9vw; } }
+    @media (min-width: 720px) {
+      .piece__offer .piece__title .number {
+        font-size: 7.5vw; } }
+    @media (min-width: 900px) {
+      .piece__offer .piece__title .number {
+        font-size: 7vw; } }
+    @media (min-width: 1248px) {
+      .piece__offer .piece__title .number {
+        font-size: 4.4vw; } }
   .piece__offer .piece__title .middle {
     font-family: "Parisienne", cursive;
     text-transform: none;
@@ -298,37 +493,52 @@ p{
     font-weight: 400; }
     @media (min-width: 321px) {
       .piece__offer .piece__title .middle {
-        font-size: 7vw; } }
+        font-size: 5vw; } }
+    @media (min-width: 720px) {
+      .piece__offer .piece__title .middle {
+        font-size: 4vw; } }
+    @media (min-width: 900px) {
+      .piece__offer .piece__title .middle {
+        font-size: 3.8vw; } }
+    @media (min-width: 1248px) {
+      .piece__offer .piece__title .middle {
+        font-size: 3vw; } }
 
 .piece__title--subtitle {
-  font-size: 4.5vw; }
+  font-size: 14px; }
   .piece__title--subtitle .first {
-    font-size: 8vw;
+    font-size: 28px;
     display: inline-block; }
-  @media (min-width: 321px) {
-    .piece__title--subtitle {
-      font-size: 3.5vw; }
-      .piece__title--subtitle .first {
-        font-size: 7vw; } }
   @media (min-width: 480px) {
     .piece__title--subtitle {
-      font-size: 2.8vw; }
+      font-size: 14px; }
       .piece__title--subtitle .first {
-        font-size: 5.5vw; } }
+        font-size: 28px; } }
   @media (min-width: 720px) {
     .piece__title--subtitle {
-      font-size: 2vw; }
+      font-size: 14px; }
       .piece__title--subtitle .first {
-        font-size: 4vw; } }
+        font-size: 30px; } }
+  @media (min-width: 900px) {
+    .piece__title--subtitle {
+      font-size: 14px; }
+      .piece__title--subtitle .first {
+        font-size: 30px; } }
+  @media (min-width: 1248px) {
+    .piece__title--subtitle {
+      font-size: 18px; }
+      .piece__title--subtitle .first {
+        font-size: 36px; } }
 
 /*it is NOT double content ('s')*/
 .gallery__line {
-  width: 80%;
-  background: #ffb3a1;
+  width: 100%;
+  background: #f1f1f1;
   height: 1px;
   border: 0;
-  margin-top: 1vw;
-  margin-bottom: 4vw; }
+  margin-top: 6px;
+  margin-bottom: 24px;
+  box-shadow: 0px 1px 2px #efefef; }
 
 @media (max-width: 320px) {
   .l-1 {
@@ -340,46 +550,103 @@ p{
   .l-2 {
     display: block; } }
 @media (min-width: 900px) {
+  .l-2 {
+    display: none; }
+
   .l-3 {
     display: block; }
 
-  .l-2 {
-    display: none; } }
-.piece__offer .piece__offer__list {
-  list-style: none;
-  padding-left: 0; }
-.piece__offer .offer {
-  font-size: 5vw;
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase; }
+  .gallery__line {
+    width: 100%; } }
+@media (min-width: 1248px) {
+  .l-1, .l-2, .l-3 {
+    display: none; }
+
+  .l-4 {
+    display: block; }
+
+  .gallery__line {
+    margin: 6px 0 0;
+    width: 100%; } }
+.piece__offer {
+  order: 1; }
   @media (min-width: 321px) {
-    .piece__offer .offer {
-      font-size: 3.5vw; } }
-  @media (min-width: 480px) {
-    .piece__offer .offer {
-      font-size: 2.8vw; } }
-  .piece__offer .offer .offer--pink {
-    color: #ffb3a1; }
+    .piece__offer {
+      order: 0; } }
+  @media (min-width: 900px) {
+    .piece__offer {
+      width: 40%;
+      order: 0; } }
+  @media (min-width: 1248px) {
+    .piece__offer {
+      width: 25%;
+      order: 1; } }
+  .piece__offer .piece__offer__list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 24px; }
+  .piece__offer .offer {
+    font-size: 5vw;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase; }
+    @media (min-width: 321px) {
+      .piece__offer .offer {
+        font-size: 3.5vw; } }
+    @media (min-width: 480px) {
+      .piece__offer .offer {
+        font-size: 2.6vw; } }
+    @media (min-width: 720px) {
+      .piece__offer .offer {
+        font-size: 2.4vw;
+        letter-spacing: .2px; } }
+    @media (min-width: 900px) {
+      .piece__offer .offer {
+        font-size: 1.8vw; } }
+    @media (min-width: 1248px) {
+      .piece__offer .offer {
+        font-size: 1.5vw; } }
+    .piece__offer .offer .offer--pink {
+      color: #ffb3a1; }
 
 .gallery__modal-header__title {
-  font-size: 6vw;
-  letter-spacing: -.2vw; }
+  font-size: 20px; }
   .gallery__modal-header__title .first {
-    display: none;
-    font-size: 9.5vw;
-    margin-left: -2vw; }
+    display: inline-block;
+    font-size: 36px;
+    margin-left: -4px; }
   @media (min-width: 480px) {
     .gallery__modal-header__title {
-      font-size: 5vw;
-      letter-spacing: .01vw; }
+      font-size: 24px; }
       .gallery__modal-header__title .first {
-        font-size: 7.5vw; } }
-  @media (min-width: 720px) {
-    .gallery__modal-header__title {
-      font-size: 3.5vw;
-      letter-spacing: .1vw; }
-      .gallery__modal-header__title .first {
-        font-size: 7vw; } }
+        display: inline-block;
+        font-size: 48px;
+        margin-left: -6px; } }
+
+@media (min-width: 720px) {
+  .gallery__modal-header__title--inserted {
+    margin-top: 24px;
+    font-size: 28px; }
+    .gallery__modal-header__title--inserted .first {
+      display: inline-block;
+      font-size: 48px;
+      margin-left: 0; } }
+@media (min-width: 900px) {
+  .gallery__modal-header__title--inserted {
+    margin-top: 24px;
+    font-size: 28px; }
+    .gallery__modal-header__title--inserted .first {
+      display: inline-block;
+      font-size: 48px;
+      margin-left: 0; } }
+@media (min-width: 1248px) {
+  .gallery__modal-header__title--inserted {
+    margin-top: 24px;
+    font-size: 28px;
+    letter-spacing: 0; }
+    .gallery__modal-header__title--inserted .first {
+      display: inline-block;
+      font-size: 48px;
+      margin-left: 0; } }
 
 .gallery__modal-header__button {
   position: absolute;
@@ -388,11 +655,12 @@ p{
 
 .gallery__content {
   font-family: "Playfair Display", serif;
-  margin-top: 6vw; }
+  margin-top: 24px;
+  padding-left: 12px;
+  padding-right: 12px; }
 
 .gallery__pieces16-item {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 3vw; }
+  font-family: "Playfair Display", serif; }
   .gallery__pieces16-item a {
     font-weight: 900;
     color: #484c55; }
@@ -411,6 +679,12 @@ p{
     @media (min-width: 720px) {
       .gallery__fishing p {
         font-size: 6vw; } }
+    @media (min-width: 900px) {
+      .gallery__fishing p {
+        font-size: 3.8vw; } }
+    @media (min-width: 1248px) {
+      .gallery__fishing p {
+        font-size: 3vw; } }
 
 .amazon__button {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+11,de6869+30,ffb3a1+67,de6869+95 */
@@ -447,6 +721,14 @@ p{
     .amazon__button {
       font-size: 3vw;
       letter-spacing: .5vw; } }
+  @media (min-width: 900px) {
+    .amazon__button {
+      font-size: 28px;
+      letter-spacing: 2px; } }
+  @media (min-width: 1248px) {
+    .amazon__button {
+      font-size: 28px;
+      letter-spacing: 2px; } }
 
 i {
   display: block;
@@ -460,6 +742,12 @@ i {
   @media (min-width: 720px) {
     i {
       font-size: 1.5vw; } }
+  @media (min-width: 900px) {
+    i {
+      font-size: 11px; } }
+  @media (min-width: 1248px) {
+    i {
+      font-size: 12px; } }
 
 .gallery__modal-footer__content {
   color: black;
@@ -476,16 +764,23 @@ i {
   position: relative;
   width: 100%;
   color: black;
-  text-shadow: 4px 3px 3px #484c55;
   background: #ffb3a133;
   font-family: "Playfair Display", serif;
-  font-size: 22vw;
+  font-size: 60px;
   font-weight: 700;
   text-align: center; }
+  @media (min-width: 480px) {
+    .amazon__title {
+      font-size: 96px; } }
   @media (min-width: 720px) {
     .amazon__title {
-      font-size: 18vw;
-      text-shadow: 7px 5px 4px #484c55; } }
+      font-size: 72px; } }
+  @media (min-width: 900px) {
+    .amazon__title {
+      font-size: 84px; } }
+  @media (min-width: 1248px) {
+    .amazon__title {
+      font-size: 180px; } }
 
 .amazon__exclusive {
   position: absolute;
@@ -493,47 +788,71 @@ i {
   width: 100%;
   top: 50%;
   left: 0;
-  font-size: 3vw;
-  letter-spacing: 1.5vw;
+  font-size: 11px;
+  letter-spacing: 10px;
   font-style: italic;
   font-weight: 400;
   background: white;
   color: black;
-  padding-bottom: .5vw;
+  padding-bottom: 3px;
   text-shadow: 0 0 0 white; }
+  @media (min-width: 480px) {
+    .amazon__exclusive {
+      font-size: 11px; } }
+  @media (min-width: 720px) {
+    .amazon__exclusive {
+      font-size: 12px; } }
+  @media (min-width: 900px) {
+    .amazon__exclusive {
+      font-size: 14px; } }
+  @media (min-width: 1248px) {
+    .amazon__exclusive {
+      font-size: 18px; } }
 
 .amazon__content {
   font-family: "Playfair Display", serif;
-  font-size: 2.2vw;
+  font-size: 7px;
   color: #000;
   background: white;
-  line-height: 4vw;
+  line-height: 12px;
   letter-spacing: .1vw;
   text-transform: uppercase;
   padding: 0;
   margin: 1vw 0;
   text-align: center; }
+  @media (min-width: 480px) {
+    .amazon__content {
+      font-size: 8px; } }
   @media (min-width: 720px) {
     .amazon__content {
-      font-size: 1.8vw;
-      line-height: 3.2vw; } }
+      font-size: 9px; } }
+  @media (min-width: 1248px) {
+    .amazon__content {
+      font-size: 12px;
+      line-height: 18px; } }
+  @media (min-width: 1500px) {
+    .amazon__content {
+      font-size: 1vw;
+      line-height: 1.5vw; } }
 
 .subline-verse {
-  width: 10vw;
+  width: 48px;
   background: #ffb3a1;
-  height: 0.2vh;
+  height: 1px;
   border: 0;
-  margin-top: 2vh;
-  margin-bottom: 2vh; }
+  margin-top: 16px;
+  margin-bottom: 16px; }
 
 .dorotea__mobile-verse {
   font-family: "Playfair Display", serif;
   font-style: italic;
   color: #26272a;
-  font-size: 2.8vw;
-  letter-spacing: 0.15vw;
+  font-size: 2.5vw;
+  letter-spacing: 0.2vw;
   line-height: 4vw;
   margin-bottom: 0; }
+  .dorotea__mobile-verse--grid {
+    padding: 0 12px; }
   @media (min-width: 480px) {
     .dorotea__mobile-verse {
       font-family: "Playfair Display", serif;
@@ -542,13 +861,45 @@ i {
       font-size: 2vw;
       letter-spacing: 0.15vw;
       line-height: 3vw; } }
+  @media (min-width: 720px) {
+    .dorotea__mobile-verse {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      color: #26272a;
+      font-size: 1.8vw;
+      letter-spacing: 0.1vw;
+      line-height: 3vw; } }
+  @media (min-width: 900px) {
+    .dorotea__mobile-verse {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      color: #26272a;
+      font-size: 1.4vw;
+      letter-spacing: 0.1vw;
+      line-height: 2.4vw; } }
+  @media (min-width: 1248px) {
+    .dorotea__mobile-verse {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      color: #26272a;
+      font-size: 1.3vw;
+      letter-spacing: 0.1vw;
+      line-height: 2vw; } }
+  @media (min-width: 1500px) {
+    .dorotea__mobile-verse {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      color: #26272a;
+      font-size: 8vw;
+      letter-spacing: 0.1vw;
+      line-height: 1.8vw; } }
 
 .dorotea__mobile-content {
   font-family: "Playfair Display", serif;
   color: #484c55;
-  font-size: 3.3vw;
-  letter-spacing: 0.1vw;
-  line-height: 5vw; }
+  font-size: 3vw;
+  letter-spacing: 0.2vw;
+  line-height: 5.5vw; }
   .dorotea__mobile-content::first-letter {
     font-family: "Parisienne", cursive;
     font-size: 12vw;
@@ -558,12 +909,66 @@ i {
       font-family: "Playfair Display", serif;
       color: #484c55;
       font-size: 2.3vw;
-      letter-spacing: 0.1vw;
-      line-height: 4vw; }
+      letter-spacing: 0.2vw;
+      line-height: 4.3vw; }
       .dorotea__mobile-content::first-letter {
         font-family: "Parisienne", cursive;
         font-size: 10vw;
         letter-spacing: -0.5vw; } }
+  @media (min-width: 720px) {
+    .dorotea__mobile-content {
+      font-family: "Playfair Display", serif;
+      color: #484c55;
+      font-size: 2vw;
+      letter-spacing: 0.1vw;
+      line-height: 3.8vw; }
+      .dorotea__mobile-content::first-letter {
+        font-family: "Parisienne", cursive;
+        font-size: 9vw;
+        letter-spacing: -0.5vw; } }
+  @media (min-width: 900px) {
+    .dorotea__mobile-content {
+      font-family: "Playfair Display", serif;
+      color: #484c55;
+      font-size: 1.5vw;
+      letter-spacing: 0.1vw;
+      line-height: 3vw; }
+      .dorotea__mobile-content::first-letter {
+        font-family: "Parisienne", cursive;
+        font-size: 8vw;
+        letter-spacing: -0.5vw; } }
+  @media (min-width: 1248px) {
+    .dorotea__mobile-content {
+      font-family: "Playfair Display", serif;
+      color: #484c55;
+      font-size: 1.6vw;
+      letter-spacing: 0.1vw;
+      line-height: 3vw; }
+      .dorotea__mobile-content::first-letter {
+        font-family: "Parisienne", cursive;
+        font-size: 9vw;
+        letter-spacing: -0.5vw; }
+      .dorotea__mobile-content.dorotea__mobile-content--hand {
+        margin-top: 156px; } }
+  @media (min-width: 1500px) {
+    .dorotea__mobile-content {
+      font-family: "Playfair Display", serif;
+      color: #484c55;
+      font-size: 1.4vw;
+      letter-spacing: 0.1vw;
+      line-height: 2.8vw; }
+      .dorotea__mobile-content::first-letter {
+        font-family: "Parisienne", cursive;
+        font-size: 8vw;
+        letter-spacing: -0.5vw; } }
+
+.grid-p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 12px;
+  padding-right: 12px; }
 
 .header__img-back-container {
   position: relative;
@@ -649,7 +1054,7 @@ i {
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   flex: 1 1 100%;
   list-style: none;
   padding: 0; }
@@ -669,7 +1074,6 @@ i {
       flex: 1 1 33%; } }
 
 .gallery__modal-header {
-  padding: 4vw 6vw;
   position: relative;
   box-shadow: 0px 2px 2px #f4f4f4; }
   .gallery__modal-header .piece__title {
@@ -691,7 +1095,7 @@ i {
       max-width: 700px; } }
 
 .gallery__modal-body {
-  padding: 2vw; }
+  padding: 12px; }
   @media (min-width: 720px) {
     .gallery__modal-body {
       display: flex;
@@ -706,16 +1110,18 @@ i {
         justify-content: center; }
       .gallery__modal-body .gallery__modal-body__content--container {
         width: 50%;
-        padding: 2vw;
+        padding: 6px;
         position: relative; } }
-  .gallery__modal-body .gallery__carousel-indicators .indicator {
-    background-color: #ffb3a1 !important;
-    height: 12px;
-    border-radius: 6px;
-    width: 12px; }
-  .gallery__modal-body .gallery__carousel-indicators li.active {
-    border: 3px solid white !important;
-    background-color: black; }
+  .gallery__modal-body .gallery__carousel-indicators {
+    top: 98%; }
+    .gallery__modal-body .gallery__carousel-indicators .indicator {
+      background-color: #ffb3a1 !important;
+      height: 12px;
+      border-radius: 6px;
+      width: 12px; }
+    .gallery__modal-body .gallery__carousel-indicators li.active {
+      border: 3px solid white !important;
+      background-color: black; }
   .gallery__modal-body .gallery__carousel-item--caption {
     padding-top: 24px; }
   .gallery__modal-body .gallery__carousel-caption {
@@ -728,58 +1134,72 @@ i {
       color: #484c55; }
   .gallery__modal-body .pieces16-list {
     list-style: circle;
-    padding: 5vw 6vw 0; }
+    padding: 12px 16px 0; }
 
 .gallery__carousel {
-  padding-bottom: 5vw; }
+  padding-bottom: 24px; }
 
 .gallery__modal-header--inserted {
   display: none; }
   @media (min-width: 720px) {
     .gallery__modal-header--inserted {
-      display: block; }
-      .gallery__modal-header--inserted .first {
-        display: inline-block;
-        margin-left: -2vw; } }
+      display: block; } }
+  @media (min-width: 900px) {
+    .gallery__modal-header--inserted {
+      display: block; } }
+  @media (min-width: 1248px) {
+    .gallery__modal-header--inserted {
+      display: block; } }
 
 .gallery__modal-footer {
   background: rgba(0, 0, 0, 0.08); }
 
 .header {
-  margin-bottom: 15vw; }
+  margin-bottom: 24px; }
+  @media (min-width: 480px) {
+    .header {
+      margin-bottom: 36px; } }
+  @media (min-width: 720px) {
+    .header {
+      margin-bottom: 48px; } }
+  @media (min-width: 900px) {
+    .header {
+      margin-bottom: 60px; } }
+  @media (min-width: 1248px) {
+    .header {
+      margin-bottom: 72px; } }
 
 .handmadeandhandpaint {
-  margin-bottom: 15vw; }
+  margin-bottom: 24px; }
+  @media (min-width: 480px) {
+    .handmadeandhandpaint {
+      margin-bottom: 36px; } }
+  @media (min-width: 720px) {
+    .handmadeandhandpaint {
+      margin-bottom: 48px; } }
+  @media (min-width: 900px) {
+    .handmadeandhandpaint {
+      margin-bottom: 60px; } }
+  @media (min-width: 1248px) {
+    .handmadeandhandpaint {
+      margin-bottom: 72px; } }
 
 .collage-sm {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(10px, auto);
+  grid-auto-rows: minmax(1px, auto);
   grid-auto-flow: dense;
   padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 10vw; }
+  padding-right: 0; }
   .collage-sm div {
-    padding: 2.5%; }
-    .collage-sm div img {
-      display: block;
-      width: 100%;
-      height: 100%; }
+    margin: 2px; }
 
-.block-blank {
-  grid-column-end: span 1; }
+.img--collage {
+  height: 100%; }
 
-.grid-sm-7 {
-  grid-column-end: span 7; }
-
-.grid-sm-6 {
-  grid-column-end: span 6; }
-
+/****/
 .grid-sm-4 {
   grid-column-end: span 4; }
-
-.grid-sm-3 {
-  grid-column-end: span 3; }
 
 .grid-sm-8 {
   grid-column-end: span 8; }
@@ -787,21 +1207,28 @@ i {
 .grid-sm-12 {
   grid-column-end: span 12; }
 
-.grid-r-sm-2 {
-  grid-row-end: span 2; }
+@media (min-width: 720px) {
+  .grid-mmd-6 {
+    grid-column-end: span 8; } }
+@media (min-width: 900px) {
+  .grid-md-7 {
+    grid-column-end: span 7; }
 
-.grid-r-sm-3 {
-  grid-row-end: span 3; }
+  .grid-md-6 {
+    grid-column-end: span 6; }
 
-.grid-r-sm-4 {
-  grid-row-end: span 4; }
+  .grid-md-4 {
+    grid-column-end: span 4; }
 
-.grid-r-sm-5 {
-  grid-row-end: span 5; }
+  .grid-md-3 {
+    grid-column-end: span 3; }
 
-.grid-r-sm-7 {
-  grid-row-end: span 7; }
+  .grid-md-8 {
+    grid-column-end: span 8; }
 
+  .grid-md-12 {
+    grid-column-end: span 12; } }
+/****/
 .grid-order-sm-1 {
   order: 1; }
 
@@ -855,33 +1282,62 @@ i {
   position: relative;
   width: 100%;
   margin: 0;
-  margin-bottom: 15vw;
   padding: 0;
-  padding-bottom: 95px; }
+  padding-bottom: 95px;
+  margin-bottom: 24px; }
+  @media (min-width: 480px) {
+    .nature {
+      margin-bottom: 36px; } }
+  @media (min-width: 720px) {
+    .nature {
+      margin-bottom: 48px; } }
+  @media (min-width: 900px) {
+    .nature {
+      margin-bottom: 60px; } }
+  @media (min-width: 1248px) {
+    .nature {
+      margin-bottom: 72px; } }
   @media (min-width: 480px) {
     .nature {
       padding: 0; } }
 
 .texture {
-  margin-bottom: 15vw; }
+  margin-bottom: 24px; }
+  @media (min-width: 480px) {
+    .texture {
+      margin-bottom: 36px; } }
+  @media (min-width: 720px) {
+    .texture {
+      margin-bottom: 48px; } }
+  @media (min-width: 900px) {
+    .texture {
+      margin-bottom: 60px; } }
+  @media (min-width: 1248px) {
+    .texture {
+      margin-bottom: 72px; } }
 
 .gallery {
-  margin-bottom: 10vw; }
-
-.list__thumbnail {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding-left: 0; }
+  margin-bottom: 24px; }
+  @media (min-width: 480px) {
+    .gallery {
+      margin-bottom: 36px; } }
+  @media (min-width: 720px) {
+    .gallery {
+      margin-bottom: 48px; } }
+  @media (min-width: 900px) {
+    .gallery {
+      margin-bottom: 60px; } }
+  @media (min-width: 1248px) {
+    .gallery {
+      margin-bottom: 72px; } }
 
 .amazon-affiliate-program {
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 15vw;
   background-color: white;
   border: 1px #ffb3a133 solid;
+  box-shadow: 0 0 4px #ebebeb;
+  margin-bottom: 24px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb3a1+0,de6868+40,ffb3a1+85 */
   /*background: #ffb3a1; /* Old browsers */
   /*background: -moz-linear-gradient(45deg, #ffb3a1 0%, #de6868 40%, #ffb3a1 85%); /* FF3.6-15 */
@@ -892,5 +1348,17 @@ i {
   background-color: #ffb3a1; // Old browsers
   @include filter-gradient(#ffb3a1, #ffb3a1, horizontal); // IE6-9 fallback on horizontal gradient
   @include background-image(linear-gradient(left bottom, #ffb3a1 0%,#de6868 40%,#ffb3a1 85%));*/ }
+  @media (min-width: 480px) {
+    .amazon-affiliate-program {
+      margin-bottom: 36px; } }
+  @media (min-width: 720px) {
+    .amazon-affiliate-program {
+      margin-bottom: 48px; } }
+  @media (min-width: 900px) {
+    .amazon-affiliate-program {
+      margin-bottom: 60px; } }
+  @media (min-width: 1248px) {
+    .amazon-affiliate-program {
+      margin-bottom: 72px; } }
 
 /*# sourceMappingURL=rebeccapurple.css.map */

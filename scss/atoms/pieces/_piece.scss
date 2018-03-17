@@ -17,7 +17,10 @@
     //width: 80%;
     }
   }
-  @media(max-width:map-get($breakpoints,xlarge)){//change!
+  @media(min-width:map-get($breakpoints,large)){//change!
+    width:25%;
+  }
+  @media(max-width:map-get($breakpoints,large)){//change!
     width:33%;
   }
   @media(max-width:map-get($breakpoints,md)){
@@ -25,11 +28,5 @@
   }
   @media(max-width:320px){
     width:100%;
-  }
-}
-.piece__offer{
-  order:1;
-  @media(min-width: 321px){
-    order:0;
   }
 }

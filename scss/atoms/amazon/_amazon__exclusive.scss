@@ -5,13 +5,24 @@
   width: 100%;
   top: 50%;
   left: 0;
-  font-size: 3vw;
-  letter-spacing: 1.5vw;
+  font-size: 11px;
+  letter-spacing: 10px;
   font-style: italic;
   font-weight: 400;
   background: white;
   color: black;
-  padding-bottom: .5vw;
+  padding-bottom: 3px;
   text-shadow: 0 0 0 white;
-  
+  @media(min-width: map-get($breakpoints,small)){
+      font-size: 11px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+      font-size: 12px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+      font-size: 14px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+      font-size: 18px;
+  }
 }

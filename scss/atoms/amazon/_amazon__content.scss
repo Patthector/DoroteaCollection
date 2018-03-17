@@ -1,17 +1,30 @@
 
 .amazon__content{
   font-family: "Playfair Display", serif;
-  font-size: 2.2vw;
+  font-size: 7px;
   color: #000;
   background: white;
-  line-height: 4vw;
+  line-height: 12px;
   letter-spacing: .1vw;
   text-transform: uppercase;
   padding: 0;
   margin: 1vw 0;
   text-align: center;
+  @media(min-width: map-get($breakpoints,small)){
+    font-size: 8px;
+  }
   @media(min-width: map-get($breakpoints,mmd)){
-      font-size: 1.8vw;
-      line-height: 3.2vw;
+    font-size: 9px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+
+  }
+  @media(min-width: map-get($breakpoints,large)){
+      font-size: 12px;
+      line-height: 18px;
+  }
+  @media(min-width: map-get($breakpoints,xlarge)){
+      font-size: 1vw;
+      line-height: 1.5vw;
   }
 }

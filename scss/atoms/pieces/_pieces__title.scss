@@ -32,4 +32,69 @@
       font-size:11vw;
     }
   }
+
+  //TABLETS AND BIG PHONES
+  @media(min-width:map-get($breakpoints,mmd)){
+    .texture__title{
+      line-height: 6vw;
+      word-spacing: -1vw;
+      .first{
+        font-size:11vw;
+        letter-spacing: -.5vw;
+      }
+      .middle{
+        font-size: 8vw;
+        letter-spacing: -.7vw;
+      }
+      .last{
+        font-size:12vw;
+      }
+    }
+  }
+  //LAPTOPS AND BIG TABLETS
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 7vw;
+    line-height: 5vw;
+    .first{
+      display: block;
+      font-size:7vw;
+    }
+    .last{
+      display: block;
+      font-size:9vw;
+    }
+
+  }
+  //DESKTOPS
+  @media(min-width:map-get($breakpoints,large)){
+    /*font-size: 7vw;
+    line-height: 5vw;
+    .first{
+      display: block;
+      font-size:7vw;
+    }
+    .last{
+      display: block;
+      font-size:9vw;
+    }*/
+  }
+  //BIG DESKTOPS
+  @media(min-width:map-get($breakpoints,xlarge)){
+    .texture__title{
+      line-height: 6vw;
+      word-spacing: -1vw;
+      .first{
+        font-size:11vw;
+        letter-spacing: -.5vw;
+      }
+      .middle{
+        font-size: 8vw;
+        letter-spacing: -.7vw;
+      }
+      .last{
+        font-size:12vw;
+      }
+    }
+  }
+
 }

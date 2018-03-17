@@ -146,7 +146,9 @@
 //By PATTOR
 
 //verse--atom styles
-@mixin dorotea__verse($verse__font-size:null, $verse__letter-spacing:null, $verse__line-height:null){
+@mixin dorotea__verse($verse__font-size:null,
+                      $verse__letter-spacing:null,
+                      $verse__line-height:null){
   font-family: $default-ff;
   font-style: italic;
   color:$color-text;
@@ -174,5 +176,20 @@
     font-size: $content__first-letter--font-size;
     letter-spacing: $content__first-letter--letter-spacing;
   }
+  @content;
+}
+
+//FOR flexy components
+@mixin flexy($flexy__direction:row,
+              $flexy__wrap:wrap,
+              $flexy__justify:flex-start,
+              $flexy__align:flex-start,
+              $flexy__flex:null){
+  display: flex;
+  flex-direction: $flexy__direction;
+  flex-wrap: $flexy__wrap;
+  justify-content: $flexy__justify;
+  align-items: $flexy__align;
+  flex: $flexy__flex;
   @content;
 }

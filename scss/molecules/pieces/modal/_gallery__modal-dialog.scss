@@ -10,7 +10,8 @@
 }
 .gallery__modal-body{
   //swifth the design of modal in 720 for 2 columns
-  padding: 2vw;
+  //padding: 2vw;
+  padding: 12px;
   @media(min-width: map-get($breakpoints,mmd)){
     display: flex;
     flex-direction: row;
@@ -26,12 +27,14 @@
     }
     .gallery__modal-body__content--container{
       width: 50%;
-      padding:2vw;
+      //padding:2vw;
+      padding: 6px;
       position: relative;
     }
   }
-  .gallery__carousel-indicators{
 
+  .gallery__carousel-indicators{
+    top:98%;
     .indicator{
       background-color: $color-primary !important;
       height: 12px;
@@ -58,9 +61,11 @@
   }
   .pieces16-list{
     list-style:circle;
-    padding: 5vw 6vw 0;
+    //padding: 5vw 6vw 0;
+    padding: 12px 16px 0;
   }
 }
 .gallery__carousel{
-  padding-bottom: 5vw;
+  //padding-bottom: 5vw;
+  padding-bottom: 24px;
 }
