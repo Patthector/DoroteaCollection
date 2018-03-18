@@ -1,24 +1,8 @@
 
 .gallery__list-pieces{
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   flex: 1 1 100%;
   list-style: none;
   padding: 0;
-  .container-img{
-    position: relative;
-    .piece__title{
-        position: absolute;
-        top:10%;
-      @media(min-width: 321px){
-        top:0;
-      }
-    }
-  }
-
   @media(min-width:320px){
     flex:1 1 50%;
   }

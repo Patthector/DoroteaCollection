@@ -20,6 +20,19 @@
     padding-left: 48px;
   }
 }
-.extra-padding-top{
-  padding-top: 36px;  
+.extra-padding-mmd-top{
+  @media(min-width: map-get($breakpoints,large)){
+      padding-top: 24px;
+  }
+}
+.img--modal{
+  max-width: 300px;
+  max-height: 90vh;
+  margin:auto;
+  @media(min-width: map-get($breakpoints,small)){
+    max-width: 400px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    max-width: 480px;
+  }
 }

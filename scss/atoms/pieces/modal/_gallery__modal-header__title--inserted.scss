@@ -1,5 +1,6 @@
 
 .gallery__modal-header__title--inserted{
+  position: relative;
   @media(min-width:map-get($breakpoints,mmd)){
     margin-top:24px;
     font-size: 28px;

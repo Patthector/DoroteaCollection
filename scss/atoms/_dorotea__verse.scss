@@ -1,7 +1,7 @@
 
 .dorotea__verse{
   //MOBILE less than 480px
-  @include dorotea__verse(9px, .3px, 12px);
+  @include dorotea__verse(10px, .3px, 12px);
   margin-bottom: 0;
   &--grid{
     padding: 0 20%;

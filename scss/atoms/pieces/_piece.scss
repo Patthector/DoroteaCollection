@@ -1,25 +1,16 @@
 
 .piece{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width:100%;
   align-items: center;
   padding:2vw 2vw 0;
-  position: relative;
-  width:100%;
-  img{
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
 
   @media(min-width:320px){
     width:50%;
   }
-  @media(min-width:map-get($breakpoints,md)){//change!
+  @media(min-width:map-get($breakpoints,md)){
     width:33%;
   }
-  @media(min-width:map-get($breakpoints,xlarge)){//change!
+  @media(min-width:map-get($breakpoints,xlarge)){
     width:25%;
     padding:36px 24px 0;
   }

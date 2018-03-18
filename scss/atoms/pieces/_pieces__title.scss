@@ -1,36 +1,14 @@
 
 .pieces__title{
-  color:$color-text;
-  font-family: $default-ff;
-  font-size:12vw;
-  text-transform: uppercase;
-  font-weight: $black;
-  text-align: center;
-  line-height: 8.5vw;
-  border-radius: 100%;
-  margin-bottom: 12px;
-  @media(min-width: 321px){
-    margin-bottom: 24px;
-  }
-  @media(min-width: map-get($breakpoints,mmd)){
-    margin-bottom: 48px;
-  }
-  @media(min-width: map-get($breakpoints,md)){
-    margin-bottom: 60px;
-  }
+  @include fonty(12vw, $default-ff, $color-text, $black, 0, uppercase, normal, 8.5vw){
+    text-align: center;
+    border-radius: 100%;
+  };
   .first{
-    color:$color-text;
-    text-transform: none;
-    font-family: $cursive-ff;
-    font-weight: $regular;
-    font-size:16vw;
+    @include fonty(16vw, $cursive-ff, $color-text, $regular, 0, none);
   }
   .last{
-    color:$color-primary;
-    text-transform: none;
-    font-family: $cursive-ff;
-    font-weight: $regular;
-    font-size:13vw;
+    @include fonty(13vw, $cursive-ff, $color-primary, $regular, 0, none);
   }
   @media(min-width: map-get($breakpoints,small)){
     font-size:9vw;
@@ -42,7 +20,6 @@
       font-size:11vw;
     }
   }
-
   //TABLETS AND BIG PHONES
   @media(min-width:map-get($breakpoints,mmd)){
     .texture__title{

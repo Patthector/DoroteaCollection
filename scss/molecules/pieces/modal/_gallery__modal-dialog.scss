@@ -1,4 +1,4 @@
-.gallery__modal-dialog{
+.gallery__modal-dialog{//how big would be the modal*350px*400px*700px
   max-width: 350px;
   margin: auto;
   @media(min-width: map-get($breakpoints,small)){
@@ -7,65 +7,4 @@
   @media(min-width: map-get($breakpoints,mmd)){
     max-width:700px;
   }
-}
-.gallery__modal-body{
-  //swifth the design of modal in 720 for 2 columns
-  //padding: 2vw;
-  padding: 12px;
-  @media(min-width: map-get($breakpoints,mmd)){
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap:nowrap;
-    flex: 1 auto;
-
-    .gallery__carousel{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .gallery__modal-body__content--container{
-      width: 50%;
-      //padding:2vw;
-      padding: 6px;
-      position: relative;
-    }
-  }
-
-  .gallery__carousel-indicators{
-    top:98%;
-    .indicator{
-      background-color: $color-primary !important;
-      height: 12px;
-      border-radius: 6px;
-      width: 12px;
-    }
-    li.active{
-      border:3px solid white !important;
-      background-color: black;
-    }
-  }
-  .gallery__carousel-item--caption{
-    padding-top: 24px;
-  }
-  .gallery__carousel-caption{
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 6px 0 0;
-    h5{
-      color:$color-text-weak;
-    }
-  }
-  .pieces16-list{
-    list-style:circle;
-    //padding: 5vw 6vw 0;
-    padding: 12px 16px 0;
-  }
-}
-.gallery__carousel{
-  //padding-bottom: 5vw;
-  padding-bottom: 24px;
 }

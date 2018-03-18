@@ -1,23 +1,13 @@
 
 .nature__title{
-  font-family: $default-ff;
-  font-size: 12vw;
+  @include fonty(12vw, $default-ff, white, $regular, 0, none, italic, 10vw);
   text-align: center;
   margin-bottom: 0;
-  color: white;
-  font-style: italic;
-  line-height: 10vw;
   .middle{
-    font-family: $default-ff;
-    font-size: 12vw;
-    font-weight: $regular;
-    color: $color-primary;
+    @include fonty(12vw, $default-ff, $color-primary, $regular);
   }
   .last{
-    font-size: 12vw;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 700;
+    @include fonty(12vw, $default-ff, white, $bold, 0, uppercase);
   }
   @media(min-width: map-get($breakpoints,mmd)){
     font-size: 12vw;
@@ -63,7 +53,6 @@
     }
   }
   @media(min-width: 1875px){//static layout
-
     font-size: 120px;
     line-height: 100px;
 

@@ -1,14 +1,10 @@
 
 .texture__title{
-  display: block;
-  width: 100%;
-  font-family: $default-ff;
-  font-size:6vw;
-  color:$color-text;
-  text-align: center;
-  line-height: 8vw;
-  word-spacing: -2vw;
-  margin-bottom: 12px;
+  @include fonty(6vw, $default-ff, $color-text, $regular, 0, none, normal, 8vw){
+    text-align: center;
+    word-spacing: -2vw;
+    margin-bottom: 12px;
+  };
   .first{
     font-weight: $black;
     font-size:14vw;
@@ -20,10 +16,7 @@
     letter-spacing: -.7vw;
   }
   .last{
-    font-family: $cursive-ff;
-    color:$color-primary;
-    font-size:16vw;
-    text-transform: capitalize;
+    @include fonty(16vw, $cursive-ff, $color-primary, $regular, 0, capitalize);
   }
 }
 
