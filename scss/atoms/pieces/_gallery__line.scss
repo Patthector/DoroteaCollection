@@ -9,11 +9,10 @@
   box-shadow: 0px 1px 2px #efefef;
 }
 
-@media(max-width: 320px){
-  .l-1{
-    display: block;
-  }
+.l-1{
+  display: block;
 }
+
 @media(min-width: 321px){
   .l-1,.l-3{
     display: none;
@@ -33,7 +32,7 @@
     width: 100%;
   }
 }
-@media(min-width: map-get($breakpoints,large)){
+@media(min-width: map-get($breakpoints,xlarge)){
   .l-1, .l-2, .l-3{
     display: none;
   }

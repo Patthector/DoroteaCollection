@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 95px;//just for screen less than 480px
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   @media(min-width: map-get($breakpoints,small)){
     margin-bottom: 36px;
   }

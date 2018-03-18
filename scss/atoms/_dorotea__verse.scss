@@ -1,10 +1,10 @@
 
-.dorotea__mobile-verse{
+.dorotea__verse{
   //MOBILE less than 480px
-  @include dorotea__verse(2.5vw, .2vw, 4vw);
+  @include dorotea__verse(9px, .3px, 12px);
   margin-bottom: 0;
   &--grid{
-    padding: 0 12px;
+    padding: 0 20%;
   }
   //TABLET SCREEN or BIG MOBILES
     @media(min-width:map-get($breakpoints,small)){
@@ -25,17 +25,24 @@
               2.4vw);
     }
   //DESKTOPS
-    @media(min-width:map-get($breakpoints,large)){
-      @include dorotea__verse(
-              1.3vw,
-              .1vw,
-              2vw);
+    @media(min-width:map-get($breakpoints,large)){//1248px
+      @include dorotea__content(
+              16px,
+              1px,
+              32px);
     }
     //BIG DESKTOPS
-      @media(min-width:map-get($breakpoints,xlarge)){
-        @include dorotea__verse(
-              8vw,
-                .1vw,
-                1.8vw);
+      @media(min-width:map-get($breakpoints,xlarge)){//1500px
+        @include dorotea__content(
+                16px,
+                1px,
+                32px);
+      }
+      //STATIC LAYOUT
+      @media(min-width: 1875px){//1875px
+        @include dorotea__content(
+                18px,
+                1px,
+                40px);
       }
 }

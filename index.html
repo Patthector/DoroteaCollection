@@ -57,37 +57,35 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-<main role = "main">
+<main role = "main" class = "main">
   <!--HEADER-->
-  <div class = "container-fluid">
-    <header class = "header">
+  <header class = "container-fluid end-of-section">
     <!--IMAGE__BACKGROUND-->
     <div class = "row">
-      <div class = "header__img-back-container">
-      <img class = "img"
-           size = "(max-width: 480px) 480px, (max-width: 900px) 900px, (max-width: 1250px) 1250px, 1500px"
-           srcset = "./images/main-img-background-480.jpg 480w, ./images/main-img-background-900.jpg 900w, ./images/main-img-background-1250.jpg 1250w, ./images/main-img-background-1500.jpg 1500w"
-           src = "./images/main-img-background-1500.jpg"
-        alt = "In this image we can see how The Dorotea
-        Collection would look in your table. All the pieces of the
-        collection available for the view, mugs, plates, bolws, etc " title = "Full Display of Dorotea Collection Dinnerware Set" />
-      <div class = "header__title-container">
-        <h1 class = "header_title">
-          <span class = "first">The</span>Dorotea Collection
-        </h1>
+      <div class = "position-relative w-100">
+        <img class = "img"
+             size = "(max-width: 480px) 480px, (max-width: 900px) 900px, (max-width: 1250px) 1250px, 1500px"
+             srcset = "./images/main-img-background-480.jpg 480w, ./images/main-img-background-900.jpg 900w, ./images/main-img-background-1250.jpg 1250w, ./images/main-img-background-1500.jpg 1500w"
+             src = "./images/main-img-background-1500.jpg"
+          alt = "Full view of Dorotea
+          Collection on your table. All the ceramic collection's pieces available, mugs, plates, bolws, etc " title = "Full Display of Dorotea Collection Dinnerware Set" />
+        <div class = "position-absolute w-100 d-block header__title-container">
+          <h1 class = "position-relative header__title">
+            <span class = "d-inline-block first">The</span>Dorotea Collection
+          </h1>
+        </div>
+        <div class = "position-absolute header__author-container">
+          <span class = "header__author"><span class = "first">By</span> <span class = "last">Carolina Silva</span></span>
+        </div>
       </div>
-      <div class = "header__author-container">
-        <span class = "header__author"><span class = "first">By</span> <span class = "last">Carolina Silva</span></span>
-      </div>
-    </div>
     </div>
     <!--end_IMAGE__BACKGROUND-->
     <!--***-->
     <!--HEADER-CONTENT-->
     <div class = "row justify-content-center">
-      <div class = "verse-container col-8 offset-4 col-mmd-6 offset-mmd-6 col-lg-3 offset-lg-0 order-lg-2">
+      <div class = "col-8 offset-4 col-mmd-6 offset-mmd-6 col-md-5 col-lg-3 offset-lg-0 extra-padding-left-lg extra-padding-top order-lg-2">
         <hr class = "subline-verse"/>
-        <p class = "dorotea__mobile-verse">Puedo sentir cada alegria y buen recuerdo, cada fracaso
+        <p class = "dorotea__verse">Puedo sentir cada alegria y buen recuerdo, cada fracaso
           y recomienzo, cada vez mas fuerte y sincero. Esta aqui,
           todo aqui, una vida entera, un camino hecho casi sin
           darse cuenta. Esta aqui esa mirada inquieta, la busqueda
@@ -95,7 +93,7 @@
           dejar su huella.</p>
         <hr class = "subline-verse"/>
       </div>
-      <p class = "col-11 col-sm-10 col-md-9 col-lg-7 offset-lg-1 dorotea__mobile-content dorotea__mobile-content--hand order-lg-1">Dorotea Collection es la obra de ceramica de la artista
+      <p class = "col-11 col-sm-10 col-lg-8 dorotea__content dorotea__content--hand order-lg-1">Dorotea Collection es la obra de ceramica de la artista
       española Carolina Silva. Creada y llevada al mercado hace mas de
       10 años, con una acojida del publico estupenda. La artista expresa
       en la obra su profunda conexion con la naturaleza, plazmandolo
@@ -104,50 +102,46 @@
       </p>
     </div>
   </header>
-  </div>
   <!--HANDMADE&HANDPAINT-->
-  <div class = "container-fluid">
-    <section class = "handmadeandhandpaint row justify-content-center">
-    <div class = "col-12 col-mmd-11 col-lg-10 collage-sm" id = "grid__collage">
-
-      <div class = "collage__title-container grid-sm-12 grid-order-sm-1">
-        <h2 class = "handmadeAndHandpaint_title"><span class = "first">handmade</span><span class = "middle">&amp;</span><span class = "last">handpaint</span></h2>
-      </div>
-      <div class = "collage__verse-container grid-sm-8 grid-md-6 grid-order-sm-2">
-        <hr class = "subline-verse"/>
-        <p class = "dorotea__mobile-verse dorotea__mobile-verse--grid">La pasion desbordante que emana el trabajo manual solo puede ser apreciado
-          por un alma creativa. Plazmando la escencia de su ser en cada trazo y mostrando
-          con la obra la belleza humana. Creando magia y buscando formas que expresarse.
-          Desarrollando la habilidad oculta de sentirse creador.</p>
-        <hr class = "subline-verse"/>
-      </div>
-      <div class = "collage__content-container grid-sm-8 grid-md-6 grid-order-sm-4">
-        <p class = "dorotea__mobile-content grid-p">Cada pieza de Dorotea Collection es trabajada cuidadosamente
-          a mano, dandole a la obra una profunda conexion con la artista y
-          haciendo de cada momento algo especial. La mezcla de colores
-          vibrantes y serenos dan un sentido de fusion fantastico, mostrando una
-          relacion con lo diverso. Carolina tambien resalta las imperfecciones de
-          su obra obra como una interaccion directa de ella con el arte, dandole
-          un caracter propio a la obra.</p>
-      </div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-10 hrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-9" src = "./images/mobile-screen/480/collage/pic10.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-3 vrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-0" src = "./images/mobile-screen/480/collage/pic1.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-8 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-1" src = "./images/mobile-screen/480/collage/pic2.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-12 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-2" src = "./images/mobile-screen/480/collage/pic3.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-6 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-3" src = "./images/mobile-screen/480/collage/pic4.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-7 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-4" src = "./images/mobile-screen/480/collage/pic5.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-12 hrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-5" src = "./images/mobile-screen/480/collage/pic6.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-9 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-6" src = "./images/mobile-screen/480/collage/pic7.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-5 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-7" src = "./images/mobile-screen/480/collage/pic8.jpg" alt = "some pic about dorotea" title = ""/></div>
-      <div class = "grid-sm-4 grid-md-3 grid-order-sm-11 hrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-8" src = "./images/mobile-screen/480/collage/pic9.jpg" alt = "some pic about dorotea" title = ""/></div>
-    </div>
-    <!--<p class = "col-11 col-sm-10 col-md-9 dorotea__mobile-content">Cada pieza de Dorotea Collection es trabajada cuidadosamente
-      a mano, dandole a la obra una profunda conexion con la artista y
-      haciendo de cada momento algo especial. La mezcla de colores
-      vibrantes y serenos dan un sentido de fusion fantastico, mostrando una
-      relacion con lo diverso. Carolina tambien resalta las imperfecciones de
-      su obra obra como una interaccion directa de ella con el arte, dandole
-      un caracter propio a la obra.</p>-->
+  <div class = "container-fluid end-of-section">
+    <div class = "row justify-content-center">
+      <!--GRID-->
+      <section class = "col-12 col-mmd-11 col-lg-10 collage" id = "grid__collage">
+        <!--title-->
+        <div class = "grid-sm-12 grid-order-sm-1 grid-order-md-1">
+          <h2 class = "grid-collage_title"><span class = "first">handmade</span><span class = "middle">&amp;</span><span class = "last">handpaint</span></h2>
+        </div>
+        <!--verse... (the container's class in uses in *.js)-->
+        <div class = "collage__verse-container grid-sm-8 grid-md-6 grid-order-sm-2 grid-order-md-3">
+          <hr class = "subline-verse"/>
+          <p class = "dorotea__verse dorotea__verse--grid">La pasion desbordante que emana el trabajo manual solo puede ser apreciado
+            por un alma creativa. Plazmando la escencia de su ser en cada trazo y mostrando
+            con la obra la belleza humana. Creando magia y buscando formas que expresarse.
+            Desarrollando la habilidad oculta de sentirse creador.</p>
+          <hr class = "subline-verse"/>
+        </div>
+        <!--content-->
+        <div class = "collage__content-container row justify-content-center grid-sm-8 grid-md-6 grid-order-sm-4 grid-order-md-5">
+          <p class = "dorotea__content col-11">Cada pieza de Dorotea Collection es trabajada cuidadosamente
+            a mano, dandole a la obra una profunda conexion con la artista y
+            haciendo de cada momento algo especial. La mezcla de colores
+            vibrantes y serenos dan un sentido de fusion fantastico, mostrando una
+            relacion con lo diverso. Carolina tambien resalta las imperfecciones de
+            su obra obra como una interaccion directa de ella con el arte, dandole
+            un caracter propio a la obra.</p>
+        </div>
+        <!--pics... (the container's class in uses in *.js)-->
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-10 grid-order-md-2 hrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-9" src = "./images/mobile-screen/480/collage/pic10.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-3 grid-order-md-3 vrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-0" src = "./images/mobile-screen/480/collage/pic1.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-8 grid-order-md-4 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-1" src = "./images/mobile-screen/480/collage/pic2.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-12 grid-order-md-7 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-2" src = "./images/mobile-screen/480/collage/pic3.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-6 grid-order-md-12 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-3" src = "./images/mobile-screen/480/collage/pic4.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-7 grid-order-md-11 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-4" src = "./images/mobile-screen/480/collage/pic5.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-12 grid-order-md-6 hrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-5" src = "./images/mobile-screen/480/collage/pic6.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-9 grid-order-md-10 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-6" src = "./images/mobile-screen/480/collage/pic7.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-5 grid-order-md-9 square" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-7" src = "./images/mobile-screen/480/collage/pic8.jpg" alt = "some pic about dorotea" title = ""/></div>
+        <div class = "grid-sm-4 grid-md-3 grid-order-sm-11 grid-order-md-8 hrect" data-toggle="modal" data-target=" #modal__collage"><img class = "img" id = "collage__pic-8" src = "./images/mobile-screen/480/collage/pic9.jpg" alt = "some pic about dorotea" title = ""/></div>
+      </section>
       <!--MODAL-->
       <div class="modal fade" id="modal__collage" tabindex="-1" role="dialog" aria-labelledby="Collage" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered phh__justify-content" role="document">
@@ -224,6 +218,50 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!--FEELTHETEXTURE-->
+  <div class = "container-fluid">
+    <section class = "texture row justify-content-center">
+      <div class = "col-12 col-md-10 row justify-content-center d-md-flex flex-md-row justify-content-md-center">
+        <div class = "col-12 col-mmd-6 texture__columnA d-flex flex-column align-items-center">
+          <h2 class = "texture__title">
+            <span class = "first">feel</span>
+            <span class = "middle">the</span>
+            <br/>
+            <span class = "last">texture</span></h2>
+          <div class = "col-8 col-mmd-10 col-md-8 justify-content-center texture__verse-container">
+            <hr class = "subline-verse"/>
+            <p class = "dorotea__verse">
+              Tocar la vitalidad del objeto y sentir la precencia del artista,
+              de una historia, de una vida completa. Cada rasgo esta lleno de
+              aciertos y deshaciertos; con cada silueta o trazo profundo,
+              vemos la belleza de una creacion, deseosa de mostrar, casi gritando,
+              lo mas profundo de su esencia.
+            </p>
+            <hr class = "subline-verse"/>
+          </div>
+        </div>
+        <div class = "col-12 col-mmd-6 texture__columnB align-self-mmd-end">
+          <p class = "dorotea__content">
+            El sentimiento generado al sentir cada producto es
+            verdaderamente fantastico. Apreciar con algo mas que la vision la
+            belleza de un arte, es una sensacion sobreacojedora. Cada trazo,
+            pofundo o lijero, de perfecta imperfecciones nos transporta a la
+            idea inicial de lo que un dia fue, en la mente de la artista su obra,
+            Dorotea Collection.
+          </p>
+        </div>
+      </div>
+      <!--<div class = "col-12 col-mmd-4 col-md-10 d-none d-mmd-block texture__image-container">
+        <img class = "img img-fluid"
+             size = "(max-width: 900px) 900px, (max-width: 1250px) 1250px, 1500px"
+             srcset = "./images/medium-screen/900/texture/texture-img-back.jpg 900w, ./images/large-screen/texture-img-back.jpg 1500w"
+             src = "./images/large-screen/texture-img-back.jpg"
+          alt = "In this image we can see how The Dorotea
+          Collection would look in your table. All the pieces of the
+          collection available for the view, mugs, plates, bolws, etc " title = "Full Display of Dorotea Collection Dinnerware Set" />
+      </div>-->
     </section>
   </div>
   <!--TOUCHOFNATURE-->
@@ -238,76 +276,32 @@
             alt = "The representation of Nature is all over on this piece of art. Leaves, flower and beautiful colors
             will make you fall in love with Dorotea Collection" title = "Touch of Nature" />
           <div class = "nature__shadow-container"></div>
-          <div class = "nature__article d-md-flex flex-md-row justify-content-md-center align-items-md-center flex-md-wrap">
-            <h2 class = "nature__title align-self-md-end">Touch<span class = "middle">of</span><span class = "last">Nature</span></h2>
-            <div class = "row no-gutters justify-content-center align-self-md-start d-md-flex flex-md-row">
-              <div class = "nature__verse-container col-7 col-md-3 col-lg-2 offset-lg-1">
+          <div class = "nature__article d-flex flex-column justify-content-center align-items-center flex-wrap">
+            <h2 class = "nature__title">Touch<span class = "middle">of</span><br/><span class = "last">Nature</span></h2>
+            <div class = "row no-gutters justify-content-center align-self-mmd-start d-md-flex flex-md-row">
+              <div class = "nature__verse-container col-8 col-md-4 extra-padding-top">
                 <hr class = "subline-verse"/>
-                <p class = "dorotea__mobile-verse dorotea__verse--color">
+                <p class = "dorotea__verse dorotea__verse--color">
                   Verde, sereno, tranquilo, silencio.
-                Crece la flor del jardin aunque el mundo
-                este en tinieblas. Expresion de vida, de
-                fuerza, de busqueda, de sentido.
-                Natural es todo lo bello, lo puro,
-                lo nuevo y lo viejo danzando juntos entre
-                lo real y lo fantastico.</p>
+                  Crece la flor del jardin aunque el mundo
+                  este en tinieblas. Expresion de vida, de
+                  fuerza, de busqueda, de sentido.
+                  Natural es todo lo bello, lo puro,
+                  lo nuevo y lo viejo danzando juntos entre
+                  lo real y lo fantastico.</p>
                 <hr class = "subline-verse"/>
               </div>
-              <div class = "nature__content-container align-self-md-end col-11 col-md-5 offset-md-1">
-                <p class = "dorotea__mobile-content dorotea__mobile-content--color">La naturaleza es el centro de inspiracion de la artista, fuente de
+              <div class = "nature__content-container col-11 col-mmd-8 col-md-12">
+                <p class = "dorotea__content dorotea__content--color col-md-6 offset-md-3">La naturaleza es el centro de inspiracion de la artista, fuente de
                 profunda admiracion y complice de toda la belleza y serenidad que
                 Carolina es capaz de captar en su ceramica haciendola protagonista
                 de cada trazo en Dorotea Collection.</p>
-            </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-  </div>
-  <!--FEELTHETEXTURE-->
-  <div class = "container-fluid">
-    <section class = "texture row justify-content-center">
-      <div class = "col-12 col-mmd-6 col-md-10 row justify-content-center d-md-flex flex-md-row justify-content-md-center">
-        <div class = "col-8 col-mmd-12 col-md-6 texture__columnA d-md-flex flex-md-column align-items-md-center">
-          <h2 class = "texture__title">
-            <span class = "first">feel</span>
-            <span class = "middle">the</span>
-            <br/>
-            <span class = "last">texture</span></h2>
-          <div class = "col-mmd-10 offset-mmd-1 col-md-8 col-lg-7 justify-content-center texture__verse-container">
-            <hr class = "subline-verse"/>
-            <p class = "dorotea__mobile-verse">
-              Tocar la vitalidad del objeto y sentir la precencia del artista,
-              de una historia, de una vida completa. Cada rasgo esta lleno de
-              aciertos y deshaciertos; con cada silueta o trazo profundo,
-              vemos la belleza de una creacion, deseosa de mostrar, casi gritando,
-              lo mas profundo de su esencia.
-            </p>
-            <hr class = "subline-verse"/>
-          </div>
-        </div>
-        <div class = "col-12 col-md-6 texture__columnB align-self-md-end">
-          <p class = "dorotea__mobile-content">
-            El sentimiento generado al sentir cada producto es
-            verdaderamente fantastico. Apreciar con algo mas que la vision la
-            belleza de un arte, es una sensacion sobreacojedora. Cada trazo,
-            pofundo o lijero, de perfecta imperfecciones nos transporta a la
-            idea inicial de lo que un dia fue, en la mente de la artista su obra,
-            Dorotea Collection.
-          </p>
-        </div>
-      </div>
-      <div class = "col-12 col-mmd-4 col-md-10 d-none d-mmd-block texture__image-container">
-        <img class = "img img-fluid"
-             size = "(max-width: 900px) 900px, (max-width: 1250px) 1250px, 1500px"
-             srcset = "./images/medium-screen/900/texture/texture-img-back.jpg 900w, ./images/large-screen/texture-img-back.jpg 1500w"
-             src = "./images/large-screen/texture-img-back.jpg"
-          alt = "In this image we can see how The Dorotea
-          Collection would look in your table. All the pieces of the
-          collection available for the view, mugs, plates, bolws, etc " title = "Full Display of Dorotea Collection Dinnerware Set" />
-      </div>
-    </section>
   </div>
   <!--DOROTEACOLLECTIONPEICES-->
   <div class = "container-fluid">
@@ -767,8 +761,8 @@
         <!--end__VEGETABLE-BOWL-->
         <!--16-PIECES OFFER-->
         <li class = "piece piece__offer" data-toggle="modal" data-target="#modal__16pieces">
-          <h3 class = "piece__title"><span class = "number">16</span><span>Pieces <span class = "middle">Dinnerware</span> Set</span></h3>
-          <ul class = "piece__offer__list">
+          <h3 class = "piece__title"><span class = "number" data-toggle="modal" data-target="#modal__16pieces">16</span><span>Pieces <span class = "middle">Dinnerware</span> Set</span></h3>
+          <ul class = "piece__offer__list" data-toggle="modal" data-target="#modal__16pieces">
             <li class = "offer">4-Dinner<span class = "offer--pink">Plates</span></li>
             <li class = "offer">4-Salad<span class = "offer--pink">Plates</span></li>
             <li class = "offer">4-Soup<span class = "offer--pink">Bowls</span></li>
@@ -926,27 +920,29 @@
     </section>
   </div>
   </div>
+  <!--FOOTER-->
+  <div class = "container-fluid">
+    <footer class = "row">
+      <!--AMAZON-->
+      <section class = "amazon-affiliate-program col-12 col-mmd-6">
+        <h4 class = "amazon__title">AMAZON
+          <i class = "amazon__exclusive">exclusive product</i>
+        </h4>
+        <p class = "amazon__content col-12">We are a participant
+        in the <b>Amazon Services
+        LLC Associates Program</b>,
+        an affiliate advertising
+        program designed to
+        provide a means for us
+        <b>to earn fees</b> by linking
+        to <b>Amazon.com</b> and
+        affiliated sites.</p>
+      </section>
+      <section class = "col-12 col-mmd-6">the footer of the webpage</section>
+    </footer>
+  </div>
 </main>
-<div class = "container-fluid">
-  <footer class = "row">
-    <!--AMAZON-->
-    <section class = "amazon-affiliate-program col-12 col-mmd-6">
-      <h4 class = "amazon__title">AMAZON
-        <i class = "amazon__exclusive">exclusive product</i>
-      </h4>
-      <p class = "amazon__content col-12">We are a participant
-      in the <b>Amazon Services
-      LLC Associates Program</b>,
-      an affiliate advertising
-      program designed to
-      provide a means for us
-      <b>to earn fees</b> by linking
-      to <b>Amazon.com</b> and
-      affiliated sites.</p>
-    </section>
-    <section class = "col-12 col-mmd-6">the footer of the webpage</section>
-  </footer>
-</div>
+
 <!-- SCRIPTS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>

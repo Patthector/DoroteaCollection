@@ -54,10 +54,18 @@
     }*/
   }
   @media(min-width:map-get($breakpoints,xlarge)){
-    font-size: 1.8vw;
-    line-height: 2vw;
+    font-size: 18px;
+    line-height: 18px;
     .first{
-      font-size:3.5vw;
+      font-size:36px;
+    }
+  }
+  //STATIC LAYOUT
+  @media(min-width:1875px){
+    font-size: 22px;
+    line-height: 22px;
+    .first{
+      font-size:40px;
     }
   }
 }
@@ -86,10 +94,21 @@
     margin-top: 0;
     line-height: 1.8vw;
   }
+  @media(min-width:map-get($breakpoints,xlarge)){
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 18px;
+  }
+  @media(min-width:1875px){
+    font-size: 36px;
+    margin-top: 0;
+    line-height: 24px;
+  }
   .number{
     display: inline-block;
     font-family: $cursive-ff;
     color:$color-primary;
+    font-weight: $regular;
     font-size:20vw;
     @media(min-width:321px){
       font-size:9vw;
@@ -103,7 +122,12 @@
     @media(min-width:map-get($breakpoints,large)){
       font-size:4.4vw;
     }
-    font-weight: $regular;
+    @media(min-width:map-get($breakpoints,xlarge)){
+      font-size:60px;
+    }
+    @media(min-width:1875px){
+      font-size:84px;
+    }
   }
   .middle{
     font-family:$cursive-ff;
@@ -122,9 +146,15 @@
     @media(min-width:map-get($breakpoints,large)){
       font-size:3vw;
     }
+    @media(min-width:map-get($breakpoints,xlarge)){
+      font-size:36px;
+    }
+    @media(min-width:1875px){
+      font-size:48px;
+    }
   }
 }
-
+//THIS IS STATIC
 .piece__title--subtitle{
   font-size: 14px;
   .first{

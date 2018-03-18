@@ -193,3 +193,26 @@
   flex: $flexy__flex;
   @content;
 }
+
+//FONTY FONT
+
+@mixin fonty($fonty__size,
+             $fonty__family : $default-ff,
+             $fonty__color : $color-secondary,
+             $fonty__weight : $regular,
+             $fonty__letter-spacing : null,
+             $fonty__transform : none,
+             $fonty__style : normal,
+             $fonty__line-height : null) {
+
+  font-family: $fonty__family;
+  font-size: $fonty__size;
+  color: $fonty__color;
+  font-weight: $fonty__weight;
+  letter-spacing: $fonty__letter-spacing;
+  text-transform: $fonty__transform;
+  font-style: $fonty__style;
+  line-height: $fonty__line-height;
+
+  @content;
+}

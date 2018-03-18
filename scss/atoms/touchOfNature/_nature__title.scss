@@ -1,57 +1,79 @@
 
 .nature__title{
   font-family: $default-ff;
-  color:white;
-  font-size: 14vw;
+  font-size: 12vw;
   text-align: center;
   margin-bottom: 0;
+  color: white;
+  font-style: italic;
+  line-height: 10vw;
   .middle{
-    color:$color-primary;
-    font-size: 8vw;
-    text-transform: uppercase;
-    font-weight: $black;
+    font-family: $default-ff;
+    font-size: 12vw;
+    font-weight: $regular;
+    color: $color-primary;
   }
   .last{
     font-size: 12vw;
-    font-family: $cursive-ff;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
   }
   @media(min-width: map-get($breakpoints,mmd)){
-    font-size: 6vw;
+    font-size: 12vw;
     .middle{
-      font-size: 11vw;
+      font-size: 12vw;
     }
     .last{
-      font-size: 11vw;
+      font-size: 12vw;
     }
   }
   @media(min-width: map-get($breakpoints,md)){
 
-    font-size: 10vw;
+    font-size: 12vw;
     .middle{
-      font-size: 6vw;
+      font-size: 12vw;
     }
     .last{
       font-size: 12vw;
     }
   }
-  @media(min-width: map-get($breakpoints,large)){
+  @media(min-width: map-get($breakpoints,large)){//1248
 
-    /*font-size: 10vw;
+    font-size: 96px;
+    line-height: 84px;
     .middle{
-      font-size: 6vw;
+      font-size: 96px;
     }
     .last{
-      font-size: 12vw;
-    }*/
+      font-size:120px;
+    }
   }
-  @media(min-width: map-get($breakpoints,xlarge)){
+  @media(min-width: map-get($breakpoints,xlarge)){//1500
 
-    font-size: 6vw;
+    font-size: 108px;
+    line-height: 100px;
+
     .middle{
-      font-size: 11vw;
+      font-size: 108px;
     }
     .last{
-      font-size: 11vw;
+      font-size: 132px;
+      letter-spacing: -3px;
+    }
+  }
+  @media(min-width: 1875px){//static layout
+
+    font-size: 120px;
+    line-height: 100px;
+
+    .middle{
+      font-size: 120px;
+    }
+    .last{
+      font-size: 132px;
+      letter-spacing: -3px;
+      font-weight: 700;
     }
   }
 }

@@ -19,10 +19,13 @@
     }
   }
 
-  @media(max-width:map-get($breakpoints,small)){
+  @media(min-width:320px){
     flex:1 1 50%;
   }
-  @media(max-width:map-get($breakpoints,large)){
+  @media(min-width:map-get($breakpoints,md)){
     flex:1 1 33%;
+  }
+  @media(min-width:map-get($breakpoints,xlarge)){
+    flex:1 1 25%;
   }
 }

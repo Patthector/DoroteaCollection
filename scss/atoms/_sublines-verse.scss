@@ -1,10 +1,15 @@
 
 .subline-verse{
-  width: 48px;//change to vw
+  width: 24px;
   background: $color-primary;
-  //height: 0.2vh;
   height: 1px;
   border:0;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  @media(min-width:map-get($breakpoints,mmd)){
+    width: 48px;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    width: 72px;
+  }
 }

@@ -1,5 +1,6 @@
 
-.header{
+//MARGIN BOTTOM FOR END-OF-SECTION
+.end-of-section{
   margin-bottom: 24px;
   @media(min-width: map-get($breakpoints,small)){
     margin-bottom: 36px;
@@ -13,4 +14,12 @@
   @media(min-width: map-get($breakpoints,large)){
     margin-bottom: 72px;
   }
+}
+.extra-padding-left-lg{
+  @media(min-width: map-get($breakpoints,large)){
+    padding-left: 48px;
+  }
+}
+.extra-padding-top{
+  padding-top: 36px;  
 }

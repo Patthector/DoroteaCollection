@@ -1,23 +1,23 @@
 
-.dorotea__mobile-content{
+.dorotea__content{
   //MOBILE less than 480px
     @include dorotea__content(
-            3vw,
-            .2vw,
-            5.5vw,
+            10px,
+            .3px,
+            17px,
             $cursive-ff,
-            12vw,
-            -.5vw);
+            36px,
+            -1px);
 
 //TABLET SCREEN or BIG MOBILES
   @media(min-width:map-get($breakpoints,small)){
     @include dorotea__content(
-            2.3vw,
-            .2vw,
-            4.3vw,
+            12px,
+            .5px,
+            20px,
             $cursive-ff,
-            10vw,
-            -.5vw);
+            48px,
+            -1px);
   }
 //LAPTOPS or BIG TABLET
   @media(min-width:map-get($breakpoints,mmd)){
@@ -42,27 +42,35 @@
 //DESKTOPS
   @media(min-width:map-get($breakpoints,large)){
     @include dorotea__content(
-            1.6vw,
-            .1vw,
-            3vw,
+            20px,
+            1px,
+            44px,
             $cursive-ff,
-            9vw,
-            -.5vw);
-    &.dorotea__mobile-content--hand{
+            108px,
+            -5px);
+    &.dorotea__content--hand{
       margin-top: 156px;
     }
   }
   //BIG DESKTOPS
     @media(min-width:map-get($breakpoints,xlarge)){
       @include dorotea__content(
-              1.4vw,
-              .1vw,
-              2.8vw,
+              20px,
+              1px,
+              44px,
               $cursive-ff,
-              8vw,
-              -.5vw);
+              108px,
+              -5px);
     }
-
+    @media(min-width: 1875px){//static layout
+      @include dorotea__content(
+              20px,
+              1px,
+              44px,
+              $cursive-ff,
+              108px,
+              -5px);
+    }
 }
 
   //this is a test for paragraph inside the grid.

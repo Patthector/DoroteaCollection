@@ -8,6 +8,16 @@
   text-align: center;
   line-height: 8.5vw;
   border-radius: 100%;
+  margin-bottom: 12px;
+  @media(min-width: 321px){
+    margin-bottom: 24px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    margin-bottom: 48px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    margin-bottom: 60px;
+  }
   .first{
     color:$color-text;
     text-transform: none;
@@ -67,33 +77,38 @@
   }
   //DESKTOPS
   @media(min-width:map-get($breakpoints,large)){
-    /*font-size: 7vw;
-    line-height: 5vw;
+    line-height: 70px;
+    font-size: 84px;
     .first{
-      display: block;
-      font-size:7vw;
+      font-size: 84px;
+      letter-spacing: 0;
     }
     .last{
-      display: block;
-      font-size:9vw;
-    }*/
+      font-size:108px;
+    }
   }
   //BIG DESKTOPS
   @media(min-width:map-get($breakpoints,xlarge)){
-    .texture__title{
-      line-height: 6vw;
-      word-spacing: -1vw;
-      .first{
-        font-size:11vw;
-        letter-spacing: -.5vw;
-      }
-      .middle{
-        font-size: 8vw;
-        letter-spacing: -.7vw;
-      }
-      .last{
-        font-size:12vw;
-      }
+    line-height: 70px;
+    font-size: 84px;
+    .first{
+      font-size: 84px;
+      letter-spacing: 0;
+    }
+    .last{
+      font-size:108px;
+    }
+  }
+  //STATIC LAYOUT
+  @media(min-width: 1875px){//static layout
+    line-height: 80px;
+    font-size: 120px;
+    .first{
+      font-size: 108px;
+      letter-spacing: 0;
+    }
+    .last{
+      font-size:144px;
     }
   }
 

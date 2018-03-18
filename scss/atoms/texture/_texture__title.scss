@@ -8,6 +8,7 @@
   text-align: center;
   line-height: 8vw;
   word-spacing: -2vw;
+  margin-bottom: 12px;
   .first{
     font-weight: $black;
     font-size:14vw;
@@ -100,18 +101,34 @@
 //BIG DESKTOPS
 @media(min-width:map-get($breakpoints,xlarge)){
   .texture__title{
-    line-height: 6vw;
-    word-spacing: -1vw;
+    line-height: 55px;
+    word-spacing: -30px;
     .first{
-      font-size:11vw;
+      font-size: 132px;
       letter-spacing: -.5vw;
     }
     .middle{
-      font-size: 8vw;
-      letter-spacing: -.7vw;
+      font-size: 72px;
     }
     .last{
-      font-size:12vw;
+      font-size:132px;
+    }
+  }
+}
+//STATIC LAYOUT
+@media(min-width: 1875px){//static layout
+  .texture__title{
+    line-height: 55px;
+    word-spacing: -30px;
+    .first{
+      font-size: 132px;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 72px;
+    }
+    .last{
+      font-size:132px;
     }
   }
 }
